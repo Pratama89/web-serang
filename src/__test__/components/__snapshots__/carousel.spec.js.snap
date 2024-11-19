@@ -1,0 +1,502 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="h-56 sm:h-64 xl:h-80 2xl:h-96"
+      >
+        <div
+          class="relative h-full w-full"
+          data-testid="carousel"
+        >
+          <div
+            class="flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-lg snap-x indiana-scroll-container indiana-scroll-container--hide-scrollbars"
+          >
+            <div
+              class="w-full flex-shrink-0 transform cursor-grab snap-center"
+              data-active="true"
+              data-testid="carousel-item"
+            >
+              <img
+                alt=""
+                class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Abu-Muda.jpg&w=1080&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Abu-Muda.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Abu-Muda.jpg&w=1080&q=75 2x"
+                style="color: transparent;"
+                width="500"
+              />
+            </div>
+            <div
+              class="w-full flex-shrink-0 transform cursor-grab snap-center"
+              data-active="false"
+              data-testid="carousel-item"
+            >
+              <img
+                alt=""
+                class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Biru-Muda.jpg&w=1080&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Biru-Muda.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Biru-Muda.jpg&w=1080&q=75 2x"
+                style="color: transparent;"
+                width="500"
+              />
+            </div>
+            <div
+              class="w-full flex-shrink-0 transform cursor-grab snap-center"
+              data-active="false"
+              data-testid="carousel-item"
+            >
+              <img
+                alt=""
+                class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Coklat-Kopi.jpg&w=1080&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Coklat-Kopi.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Coklat-Kopi.jpg&w=1080&q=75 2x"
+                style="color: transparent;"
+                width="500"
+              />
+            </div>
+            <div
+              class="w-full flex-shrink-0 transform cursor-grab snap-center"
+              data-active="false"
+              data-testid="carousel-item"
+            >
+              <img
+                alt=""
+                class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Dadu-Fanta.jpg&w=1080&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Dadu-Fanta.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Dadu-Fanta.jpg&w=1080&q=75 2x"
+                style="color: transparent;"
+                width="500"
+              />
+            </div>
+            <div
+              class="w-full flex-shrink-0 transform cursor-grab snap-center"
+              data-active="false"
+              data-testid="carousel-item"
+            >
+              <img
+                alt=""
+                class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Hitam.jpg&w=1080&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Hitam.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Hitam.jpg&w=1080&q=75 2x"
+                style="color: transparent;"
+                width="500"
+              />
+            </div>
+            <div
+              class="w-full flex-shrink-0 transform cursor-grab snap-center"
+              data-active="false"
+              data-testid="carousel-item"
+            >
+              <img
+                alt=""
+                class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                data-nimg="1"
+                decoding="async"
+                height="300"
+                loading="lazy"
+                src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Mocca-Tua.jpg&w=1080&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Mocca-Tua.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Mocca-Tua.jpg&w=1080&q=75 2x"
+                style="color: transparent;"
+                width="500"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-3"
+          >
+            <button
+              aria-label="Slide 1"
+              class="h-3 w-3 rounded-full bg-white dark:bg-gray-800"
+              data-testid="carousel-indicator"
+            />
+            <button
+              aria-label="Slide 2"
+              class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+              data-testid="carousel-indicator"
+            />
+            <button
+              aria-label="Slide 3"
+              class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+              data-testid="carousel-indicator"
+            />
+            <button
+              aria-label="Slide 4"
+              class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+              data-testid="carousel-indicator"
+            />
+            <button
+              aria-label="Slide 5"
+              class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+              data-testid="carousel-indicator"
+            />
+            <button
+              aria-label="Slide 6"
+              class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+              data-testid="carousel-indicator"
+            />
+          </div>
+          <div
+            class="absolute top-0 left-0 flex h-full items-center justify-center px-4 focus:outline-none"
+          >
+            <button
+              aria-label="Previous slide"
+              class="group"
+              data-testid="carousel-left-control"
+              type="button"
+            >
+              <span
+                class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 19l-7-7 7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div
+            class="absolute top-0 right-0 flex h-full items-center justify-center px-4 focus:outline-none"
+          >
+            <button
+              aria-label="Next slide"
+              class="group"
+              data-testid="carousel-right-control"
+              type="button"
+            >
+              <span
+                class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 5l7 7-7 7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="h-56 sm:h-64 xl:h-80 2xl:h-96"
+    >
+      <div
+        class="relative h-full w-full"
+        data-testid="carousel"
+      >
+        <div
+          class="flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-lg snap-x indiana-scroll-container indiana-scroll-container--hide-scrollbars"
+        >
+          <div
+            class="w-full flex-shrink-0 transform cursor-grab snap-center"
+            data-active="true"
+            data-testid="carousel-item"
+          >
+            <img
+              alt=""
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Abu-Muda.jpg&w=1080&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Abu-Muda.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Abu-Muda.jpg&w=1080&q=75 2x"
+              style="color: transparent;"
+              width="500"
+            />
+          </div>
+          <div
+            class="w-full flex-shrink-0 transform cursor-grab snap-center"
+            data-active="false"
+            data-testid="carousel-item"
+          >
+            <img
+              alt=""
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Biru-Muda.jpg&w=1080&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Biru-Muda.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Biru-Muda.jpg&w=1080&q=75 2x"
+              style="color: transparent;"
+              width="500"
+            />
+          </div>
+          <div
+            class="w-full flex-shrink-0 transform cursor-grab snap-center"
+            data-active="false"
+            data-testid="carousel-item"
+          >
+            <img
+              alt=""
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Coklat-Kopi.jpg&w=1080&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Coklat-Kopi.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Coklat-Kopi.jpg&w=1080&q=75 2x"
+              style="color: transparent;"
+              width="500"
+            />
+          </div>
+          <div
+            class="w-full flex-shrink-0 transform cursor-grab snap-center"
+            data-active="false"
+            data-testid="carousel-item"
+          >
+            <img
+              alt=""
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Dadu-Fanta.jpg&w=1080&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Dadu-Fanta.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Dadu-Fanta.jpg&w=1080&q=75 2x"
+              style="color: transparent;"
+              width="500"
+            />
+          </div>
+          <div
+            class="w-full flex-shrink-0 transform cursor-grab snap-center"
+            data-active="false"
+            data-testid="carousel-item"
+          >
+            <img
+              alt=""
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Hitam.jpg&w=1080&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Hitam.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Hitam.jpg&w=1080&q=75 2x"
+              style="color: transparent;"
+              width="500"
+            />
+          </div>
+          <div
+            class="w-full flex-shrink-0 transform cursor-grab snap-center"
+            data-active="false"
+            data-testid="carousel-item"
+          >
+            <img
+              alt=""
+              class="absolute top-1/2 left-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Mocca-Tua.jpg&w=1080&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Mocca-Tua.jpg&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fmutiaratextile.com%2Fwp-content%2Fuploads%2F2022%2F06%2FKaret-12mm-Polos-Mocca-Tua.jpg&w=1080&q=75 2x"
+              style="color: transparent;"
+              width="500"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-3"
+        >
+          <button
+            aria-label="Slide 1"
+            class="h-3 w-3 rounded-full bg-white dark:bg-gray-800"
+            data-testid="carousel-indicator"
+          />
+          <button
+            aria-label="Slide 2"
+            class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+            data-testid="carousel-indicator"
+          />
+          <button
+            aria-label="Slide 3"
+            class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+            data-testid="carousel-indicator"
+          />
+          <button
+            aria-label="Slide 4"
+            class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+            data-testid="carousel-indicator"
+          />
+          <button
+            aria-label="Slide 5"
+            class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+            data-testid="carousel-indicator"
+          />
+          <button
+            aria-label="Slide 6"
+            class="h-3 w-3 rounded-full bg-white/50 hover:bg-white dark:bg-gray-800/50 dark:hover:bg-gray-800"
+            data-testid="carousel-indicator"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-0 flex h-full items-center justify-center px-4 focus:outline-none"
+        >
+          <button
+            aria-label="Previous slide"
+            class="group"
+            data-testid="carousel-left-control"
+            type="button"
+          >
+            <span
+              class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10"
+            >
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 19l-7-7 7-7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div
+          class="absolute top-0 right-0 flex h-full items-center justify-center px-4 focus:outline-none"
+        >
+          <button
+            aria-label="Next slide"
+            class="group"
+            data-testid="carousel-right-control"
+            type="button"
+          >
+            <span
+              class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10"
+            >
+              <svg
+                aria-hidden="true"
+                class="h-5 w-5 text-white dark:text-gray-800 sm:h-6 sm:w-6"
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
