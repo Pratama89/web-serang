@@ -14,7 +14,7 @@ export default function ComponentCarousel() {
           }
           alt=""
           width={1500}
-          height={1500}
+          height={800}
           className="h-full w-full object-cover"
         />
         <Image
