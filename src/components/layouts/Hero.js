@@ -61,21 +61,22 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-20 text-center text-white px-6 max-w-4xl">
         <h1 className="text-5xl font-bold leading-snug">
-          <span className="text-primary">Mutiara</span> Elasticondo
+          <span className="text-primary">CV. Mutiara</span> Elasticondo
         </h1>
         <p className="mt-4 text-lg">
-          Dipercaya oleh ratusan pelaku industri sebagai penyedia jasa laminating
-          kain dan busa sejak tahun 2014.
+        Berdiri di garis depan industri tekstil, kami berkomitmen untuk memberikan produk yang tahan lama, inovatif, dan dapat diandalkan untuk setiap kebutuhan Anda
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           {/* Tombol Layanan */}
+          <Link href="https://wa.link/h7ywr2" target="_blank">
           <button className="bg-primary text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition">
-            Layanan Laminating
+          Jelajahi Produk Kami
           </button>
+          </Link>
           {/* Tombol Kontak */}
           <Link href="https://wa.link/h7ywr2" target="_blank">
             <button className="bg-white text-black font-medium px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition">
-              Kontak Admin
+            Hubungi Kami untuk Penawaran
             </button>
           </Link>
         </div>

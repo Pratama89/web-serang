@@ -2,6 +2,7 @@
 
 import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
+import Product from "./Product";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -93,75 +94,78 @@ export default function Header() {
     //   </div>
     // </nav>
 
-    <nav
-  className="bg-white shadow-md fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
-  <div className="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
-    {/* Logo */}
-    <Link href={"/"}>
-      <Image
-        src="/logolaminating.png"
-        alt="Logo"
-        width={300}
-        height={150}
-        priority
-        className="cursor-pointer"
-      />
-    </Link>
-    {/* Navigation Links */}
-    <ul className="hidden md:flex gap-8 items-center justify-center text-gray-700 font-medium">
-      <li className="hover:text-blue-600 transition">
-        <Link href="#home">Home</Link>
-      </li>
-      <li className="hover:text-blue-600 transition">
-        <Link href="#about">About</Link>
-      </li>
-      <li className="hover:text-blue-600 transition">
-        <Link href="#product">Product</Link>
-      </li>
-      <li className="hover:text-blue-600 transition">
-        <Link href="#contact">Contact</Link>
-      </li>
-    </ul>
-    {/* Hamburger Menu (Mobile) */}
-    <button
-      onClick={() => setNavbar(!navbar)}
-      className="md:hidden p-2 rounded-md bg-gray-200">
-      <Image
-        src={navbar ? "/close.svg" : "/hamburger-menu.svg"}
-        alt="Menu"
-        width={30}
-        height={30}
-      />
-    </button>
-    {/* Mobile Menu */}
-    <ul
-      className={`${
-        navbar ? "block" : "hidden"
-      } fixed top-0 left-0 w-full h-full bg-white p-8 space-y-6 text-center text-gray-700 font-medium md:hidden`}>
-      <li>
-        <Link href="#home" onClick={() => setNavbar(false)}>
-          Home
+    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
+        {/* Logo */}
+        <Link href={"/"}>
+          <Image
+            src="/logomutiaraserang.png"
+            alt="Logo"
+            width={300}
+            height={150}
+            priority
+            className="cursor-pointer"
+          />
         </Link>
-      </li>
-      <li>
-        <Link href="#about" onClick={() => setNavbar(false)}>
-          About
-        </Link>
-      </li>
-      <li>
-        <Link href="#product" onClick={() => setNavbar(false)}>
-          Product
-        </Link>
-      </li>
-      <li>
-        <Link href="#contact" onClick={() => setNavbar(false)}>
-          Contact
-        </Link>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
+        {/* Navigation Links */}
+        <ul className="hidden md:flex gap-8 items-center justify-center text-gray-700 font-medium">
+          <li className="hover:text-blue-600 transition">
+            <Link href="#home">Home</Link>
+          </li>
+          <li className="hover:text-blue-600 transition">
+            <div><Product /></div>
+          </li>
+          <li className="hover:text-blue-600 transition">
+            <Link href="#product">About</Link>
+          </li>
+          <li className="hover:text-blue-600 transition">
+            <Link href="#contact">Divisi</Link>
+          </li>
+          <li className="hover:text-blue-600 transition">
+            <Link href="#contact">Kontak</Link>
+          </li>
+          <li className="hover:text-blue-600 transition">
+            <Link href="#contact">Galeri</Link>
+          </li>
+        </ul>
+        {/* Hamburger Menu (Mobile) */}
+        <button
+          onClick={() => setNavbar(!navbar)}
+          className="md:hidden p-2 rounded-md bg-gray-200">
+          <Image
+            src={navbar ? "/close.svg" : "/hamburger-menu.svg"}
+            alt="Menu"
+            width={30}
+            height={30}
+          />
+        </button>
+        {/* Mobile Menu */}
+        <ul
+          className={`${
+            navbar ? "block" : "hidden"
+          } fixed top-0 left-0 w-full h-full bg-white p-8 space-y-6 text-center text-gray-700 font-medium md:hidden`}>
+          <li>
+            <Link href="#home" onClick={() => setNavbar(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="#about" onClick={() => setNavbar(false)}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="#product" onClick={() => setNavbar(false)}>
+              Product
+            </Link>
+          </li>
+          <li>
+            <Link href="#contact" onClick={() => setNavbar(false)}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }
