@@ -15,9 +15,6 @@ module.exports = {
       colors: {
         primary: "#ed3237",
       },
-      fontFamily: {
-        sans: ['Helvetica W01 Light', 'Arial', 'sans-serif'], // Menggunakan Poppins sebagai default font sans
-      },
     },
     screens: {
       xs: [{ min: "280px", max: "640px" }],

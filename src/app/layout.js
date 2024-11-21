@@ -8,8 +8,8 @@ import { AppProvider } from '@/components/AppContext';
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 
 export const metadata = {
-  title: 'Mutiara Laminating',
-  description: 'Perusahaan Jasa Laminating',
+  title: 'CV. Mutiara Elasticindo',
+  description: 'Perusahaan Pabrik Textile',
 }
 
 export default function RootLayout({ children }) {

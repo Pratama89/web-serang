@@ -11,10 +11,9 @@ export default function MenuItem() {
         className="bg-cover rounded-lg delay-[300ms] duration-[600ms] hover:scale-[1.5]"
       />
       <div className="">
-        <h3 className="text-lg font-semibold ">Laminating Busa</h3>
+        <h3 className="text-lg font-semibold ">Produksi Karet, Tali, Corong dan Korset</h3>
         <p className="text-sm my-2 mx-2">
-          Busa lapis dengan material terbaik bisa untuk exterior produk, lapisan
-          kain BH, aksesori, dan lain sebagainya
+          Penggabungan Benang dan Karet untuk kebutuhan industri.
         </p>
       </div>
     </div>
