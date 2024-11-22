@@ -50,13 +50,13 @@ export default function Header() {
             <Link href="/about">Tentang</Link>
           </li>
           <li className="hover:text-blue-600 transition">
-            <Link href="#devisi">Divisi</Link>
+            <Link href="/devisi">Divisi</Link>
           </li>
           <li className="hover:text-blue-600 transition">
-            <Link href="#kontak">Kontak</Link>
+            <Link href="/kontak">Kontak</Link>
           </li>
           <li className="hover:text-blue-600 transition">
-            <Link href="#galeri">Galeri</Link>
+            <Link href="/galeri">Galeri</Link>
           </li>
         </ul>
         {/* Hamburger Menu (Mobile) */}

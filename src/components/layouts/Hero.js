@@ -6,7 +6,7 @@ import { Carousel } from "flowbite-react";
 export default function Hero() {
   return (
     <section
-      className="relative bg-white flex items-center justify-center h-screen w-full overflow-hidden"
+      className="relative bg-white flex items-center justify-center h-[75vh] w-full overflow-hidden"
       id="home">
       {/* Background Image */}
       <Image
@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           {/* Tombol Layanan */}
           <Link href="https://wa.link/h7ywr2" target="_blank">
-          <button className="bg-primary text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition">
+          <button className="bg-primary text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-red-700 transition">
           Jelajahi Produk Kami
           </button>
           </Link>

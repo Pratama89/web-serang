@@ -10,7 +10,7 @@ export default function ComponentCarousel() {
       <Carousel>
         <Image
           src={
-            "https://lh3.googleusercontent.com/5Vuj8Iib2YCRxIz4_p3iEzEGIXOJGCXOZepxINm78-8YB0VxEgB3F7_tABzcxQKeB-CsZddUDQrieIR2=s239-c"
+            "https://drive.google.com/file/d/1YyR27J9lzS_5gBxS56ObiW5NrDM9xNNx"
           }
           alt=""
           width={1500}
@@ -53,15 +53,8 @@ export default function ComponentCarousel() {
           height={800}
           className="object-cover"
         />
-        <Image
-          src={
-            "https://lh3.googleusercontent.com/JrmrViRAykyu-63RKCZYKIjzdKWWJdo_TYMBwx5oW_Sl3_9TWo8V-TlqACpM9Qyjs42NpU0ZeGl4eZxj=s239-c"
-          }
-          alt=""
-          width={1500}
-          height={800}
-          className="object-cover"
-        />
+        
+        
       </Carousel>
     </div>
   );
