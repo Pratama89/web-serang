@@ -9,7 +9,7 @@ export default function Products() {
       description:
         "Kami memproduksi karet elastis berkualitas tinggi khusus untuk bra (BH), dirancang untuk memberikan kenyamanan, daya tahan, dan fleksibilitas maksimal. Produk kami menggunakan bahan premium dan teknologi terkini, memastikan elastisitas yang optimal serta mendukung desain bra modern yang stylish dan fungsional.",
       image: "/img/rajut1.JPG",
-      link: "/produk/karet-elastis"
+      link: "/products/karet",
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ export default function Products() {
       description:
         "Kami memproduksi tali berkualitas tinggi untuk bra (BH), dirancang dengan perhatian khusus pada kenyamanan, kekuatan, dan estetika. Tali-tali kami tersedia dalam berbagai ukuran, warna, dan desain untuk mendukung kebutuhan produksi bra yang stylish dan fungsional, sekaligus memastikan daya tahan dan performa terbaik.",
       image: "/img/rajut2.JPG",
-      link: "/produk/tali-bh"
+      link: "/products/tali",
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ export default function Products() {
       description:
         "Kami memproduksi corong untuk bra (BH) dengan desain yang presisi dan material berkualitas tinggi. Corong kami dirancang untuk memberikan bentuk dan dukungan optimal, memastikan kenyamanan serta daya tahan yang lebih lama. Produk kami ideal untuk digunakan dalam berbagai model bra, mendukung desain yang ergonomis dan fungsional.",
       image: "/img/rajut3.JPG",
-      link: "/produk/corong-bh"
+      link: "/products/corong",
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ export default function Products() {
       description:
         "Kami memproduksi korset dengan desain yang elegan dan fungsional, menggunakan bahan berkualitas tinggi untuk memberikan dukungan maksimal dan kenyamanan sepanjang hari. Korset kami dirancang untuk membentuk tubuh dengan sempurna, memberikan tampilan yang lebih ramping dan menawan. Tersedia dalam berbagai ukuran dan model, korset kami cocok untuk berbagai kebutuhan, baik untuk pakaian sehari-hari maupun acara khusus.",
       image: "/img/rajut4.JPG",
-      link: "/produk/korset"
+      link: "/products/korset",
     },
   ];
 
@@ -46,35 +46,35 @@ export default function Products() {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-  {products.map((product) => (
-    <div
-      key={product.id}
-      className="bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 hover:shadow-xl"
-    >
-      <div className="relative w-full h-64">
-        <Image
-          src={product.image}
-          alt={product.name}
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
-        />
-      </div>
-      <div className="p-6">
-        <h3 className="text-xl font-semibold">{product.name}</h3>
-        <p className="mt-4 text-gray-600">{product.description}</p>
-        <div className="mt-4">
-          <Link href={product.link}>
-            <div className="inline-block bg-red-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-red-600 transition">
-              Lihat Detail
+        {products.map((product) => (
+          <div
+            key={product.id}
+            className="bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 hover:shadow-xl">
+            <div className="relative w-full h-64">
+              <Image
+                src={product.image}
+                alt={product.name}
+                layout="fill"
+                objectFit="cover"
+                className="w-full h-full"
+              />
             </div>
-          </Link>
-        </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold">{product.name}</h3>
+              <p className="mt-4 text-gray-600">{product.description}</p>
+              <div className="mt-4">
+                <Link href={product.link}>
+                  {" "}
+                  {/* Link menuju halaman produk */}
+                  <a className="inline-block bg-red-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-red-600 transition">
+                    Lihat Detail
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
-  ))}
-</div>
-
     </section>
   );
 }

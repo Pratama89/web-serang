@@ -2,7 +2,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from "react-icons/
 
 export default function Kontak() {
   return (
-    <section id="kontak" className="bg-white  py-32 mt-16 ">
+    <section id="kontak" className="bg-white py-32 mt-16">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Header */}
         <h2
@@ -12,7 +12,7 @@ export default function Kontak() {
           Hubungi Kami
         </h2>
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-          CV. Mutiara Elasticindo adalah Produsen Karet BH, Tali BH, Corong BH, dan Korset. 
+          CV. Mutiara Elasticindo adalah Produsen Karet BH, Tali BH, Corong BH, dan Korset.
           Untuk pertanyaan atau konsultasi bisnis, silakan hubungi kami melalui informasi kontak di bawah ini.
         </p>
 
@@ -56,6 +56,23 @@ export default function Kontak() {
               Jl. Keserangan - Pengampelan No. 88, Kp. Nambo RT 06 / 03, Ds. Keserangan,
               Kec. Ciruas - Kab. Serang, Banten, Indonesia
             </p>
+          </div>
+        </div>
+
+        {/* Google Maps Embed */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-semibold text-center mb-6">
+            Lokasi Kami
+          </h3>
+          <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.8233217142847!2d106.24606056119806!3d-6.132740283092936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41f5155a2ee657%3A0x2862c37fbe141189!2sMutiara%20elastis%20new!5e0!3m2!1sen!2sus!4v1732268624292!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
