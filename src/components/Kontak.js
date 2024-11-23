@@ -1,4 +1,9 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export default function Kontak() {
   return (
@@ -12,8 +17,9 @@ export default function Kontak() {
           Hubungi Kami
         </h2>
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-          CV. Mutiara Elasticindo adalah Produsen Karet BH, Tali BH, Corong BH, dan Korset.
-          Untuk pertanyaan atau konsultasi bisnis, silakan hubungi kami melalui informasi kontak di bawah ini.
+          CV. Mutiara Elasticindo adalah Produsen Karet BH, Tali BH, Corong BH,
+          dan Korset. Untuk pertanyaan atau konsultasi bisnis, silakan hubungi
+          kami melalui informasi kontak di bawah ini.
         </p>
 
         {/* Kontak Details */}
@@ -22,13 +28,14 @@ export default function Kontak() {
           <div className="flex flex-col items-center text-center bg-gray-100 p-6 rounded-lg shadow-md w-full md:w-1/3">
             <FaWhatsapp className="text-green-500 text-5xl mb-4" />
             <h3 className="text-xl font-semibold mb-2">WhatsApp</h3>
-            <p className="text-gray-600 mb-4">Klik tombol di bawah untuk menghubungi kami via WhatsApp</p>
+            <p className="text-gray-600 mb-4">
+              Klik tombol di bawah untuk menghubungi kami via WhatsApp
+            </p>
             <a
               href="https://wa.me/6281368939180"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-green-600 transition"
-            >
+              className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-green-600 transition">
               Hubungi via WhatsApp
             </a>
           </div>
@@ -42,8 +49,7 @@ export default function Kontak() {
             </p>
             <a
               href="mailto:admin@mutiara-elasticindo.co.id"
-              className="text-blue-500 font-semibold underline"
-            >
+              className="text-blue-500 font-semibold underline">
               admin@mutiara-elasticindo.co.id
             </a>
           </div>
@@ -53,8 +59,8 @@ export default function Kontak() {
             <FaMapMarkerAlt className="text-red-500 text-5xl mb-4" />
             <h3 className="text-xl font-semibold mb-2">Alamat</h3>
             <p className="text-gray-600">
-              Jl. Keserangan - Pengampelan No. 88, Kp. Nambo RT 06 / 03, Ds. Keserangan,
-              Kec. Ciruas - Kab. Serang, Banten, Indonesia
+              Jl. Keserangan - Pengampelan No. 88, Kp. Nambo RT 06 / 03, Ds.
+              Keserangan, Kec. Ciruas - Kab. Serang, Banten, Indonesia
             </p>
           </div>
         </div>
@@ -66,13 +72,12 @@ export default function Kontak() {
           </h3>
           <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.8233217142847!2d106.24606056119806!3d-6.132740283092936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41f5155a2ee657%3A0x2862c37fbe141189!2sMutiara%20elastis%20new!5e0!3m2!1sen!2sus!4v1732268624292!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18870.1540435797!2d106.24859046752003!3d-6.135912600325453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41f5155a2ee657%3A0x2862c37fbe141189!2sMutiara%20elastis%20new!5e0!3m2!1sen!2sus!4v1732334957662!5m2!1sen!2sus" 
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen=""
-              loading="lazy"
-            ></iframe>
+              loading="lazy"></iframe>
           </div>
         </div>
       </div>

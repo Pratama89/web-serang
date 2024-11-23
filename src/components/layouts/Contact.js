@@ -5,13 +5,13 @@ export default function Contact() {
     <section className="text-center my-16  pt-24" id="contact">
       <SectionHeaders
         subHeader="Kontak Kami"
-        mainHeader="Komp. Bangun Reksa Indah II Blok V No.18"
+        mainHeader=""
       />
       <div className="mt-16 lg:mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5927426770388!2d106.703291!3d-6.21471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9f3a3b5d1d3:0xbcdf79510b5524e5!2sJl. Btn Blok V No.18, RT.007/RW.006, Pd. Pucung, Kec. Karang Tengah, Kota Tangerang, Banten 15157!5e0!3m2!1sid!2sid!4v1701757678280!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18870.1540435797!2d106.24859046752003!3d-6.135912600325453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41f5155a2ee657%3A0x2862c37fbe141189!2sMutiara%20elastis%20new!5e0!3m2!1sen!2sus!4v1732334957662!5m2!1sen!2sus" 
               width="600"
               height="450"
               style={{ border: 0 }}
@@ -25,9 +25,8 @@ export default function Contact() {
                   Detail Alamat
                 </h3>
                 <p className="mt-1 text-gray-600">
-                  Jl. Btn, Komp. Bangun Reksa Indah II Blok V No.18,
-                  RT.007/RW.006, Pd. Pucung, Kec. Karang Tengah, Kota Tangerang,
-                  Banten 15157
+                Jl. Keserangan - Pengampelan No. 88, Kp. Nambo RT 06 / 03, Ds.
+                Keserangan, Kec. Ciruas - Kab. Serang, Banten, Indonesia
                 </p>
               </div>
               <div className="border-t border-gray-200 px-6 py-4">
@@ -41,11 +40,15 @@ export default function Contact() {
               <div className="border-t border-gray-200 px-6 py-4">
                 <h3 className="text-lg font-medium text-gray-900">Kontak</h3>
                 <p className="mt-1 text-gray-600">
-                  Email: admin@mutiaralaminating.com
+                  Email: admin@mutiara-elasticindo.co.id
                 </p>
                 <p className="mt-1 text-gray-600">
-                  WhatsApp: +62 812-1786-9431
+                  WhatsApp:{" "}
+                  <a href="https://wa.me/6281368939180" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+                    +62 813-6893-9180
+                  </a>
                 </p>
+
               </div>
             </div>
           </div>

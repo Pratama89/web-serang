@@ -38,27 +38,26 @@ export default function Header() {
         </Link>
         {/* Navigation Links */}
         <ul className="hidden md:flex gap-8 items-center justify-center text-gray-700 font-medium">
-          <li className="hover:text-blue-600 transition">
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="/#home">Home</Link>
           </li>
-          <li className="hover:text-blue-600 transition">
-            <Link href="/products">
-              Products
-            </Link>
+          <li className="hover:text-blue-600 transition hover:underline">
+            <Link href="/products">Produk</Link>
           </li>
-          <li className="hover:text-blue-600 transition">
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="/about">Tentang</Link>
           </li>
-          <li className="hover:text-blue-600 transition">
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="/devisi">Divisi</Link>
           </li>
-          <li className="hover:text-blue-600 transition">
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="/kontak">Kontak</Link>
           </li>
-          <li className="hover:text-blue-600 transition">
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="/galeri">Galeri</Link>
           </li>
         </ul>
+
         {/* Hamburger Menu (Mobile) */}
         <button
           onClick={() => setNavbar(!navbar)}
@@ -75,37 +74,38 @@ export default function Header() {
           className={`${
             navbar ? "block" : "hidden"
           } fixed top-0 left-0 w-full h-full bg-white p-8 space-y-6 text-center text-gray-700 font-medium md:hidden`}>
-          <li>
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="#home" onClick={() => setNavbar(false)}>
               Home
             </Link>
           </li>
-          <li>
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="#about" onClick={() => setNavbar(false)}>
               Produk
             </Link>
           </li>
-          <li>
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="#product" onClick={() => setNavbar(false)}>
               Tentang
             </Link>
           </li>
-          <li>
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="#contact" onClick={() => setNavbar(false)}>
               Devisi
             </Link>
           </li>
-          <li>
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="#contact" onClick={() => setNavbar(false)}>
               Kontak
             </Link>
           </li>
-          <li>
+          <li className="hover:text-blue-600 transition hover:underline">
             <Link href="#contact" onClick={() => setNavbar(false)}>
               Galeri
             </Link>
           </li>
         </ul>
+
       </div>
     </nav>
   );

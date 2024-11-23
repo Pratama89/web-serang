@@ -9,6 +9,14 @@ export default function Hero() {
       className="relative bg-white flex items-center justify-center h-[75vh] w-full overflow-hidden"
       id="home">
       {/* Background Image */}
+      {/* <video
+        className="absolute z-0 w-full h-full object-cover"
+        src="/img/rajut-depan.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video> */}
       <Image
         src="/laminating-hero.jpg"
         alt="Hero Background"
