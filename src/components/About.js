@@ -12,7 +12,7 @@ export default function About() {
         {/* Gambar */}
         <div className="flex w-full overflow-hidden h-[200px] md:h-[300px] mb-12 justify-center">
           <Image
-            src="/img/rajut3.jpg" // Sesuaikan path gambar
+            src="/img/factory.jpg" // Sesuaikan path gambar
             alt="Pabrik CV. Mutiara Elasticindo"
             width={800}
             height={600}

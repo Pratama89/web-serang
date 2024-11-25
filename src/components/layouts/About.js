@@ -13,16 +13,17 @@ export default function About() {
         <div className="relative flex flex-col lg:flex-row bg-white container mx-auto rounded-lg shadow-md overflow-hidden">
           {/* Gambar di sebelah kiri */}
           <div
-            className="w-full lg:w-1/2 h-64 lg:h-auto"
+            className="w-full lg:w-1/2 h-64 lg:h-auto bg-fixed"
             style={{
-              backgroundImage: `url('img/rajut3.jpg')`,
+              backgroundImage: `url('/img/rajut3.jpg')`,
               backgroundPosition: "center",
               backgroundSize: "cover",
+              backgroundAttachment: "fixed", // Efek paralaks
             }}
           ></div>
 
           {/* Konten di sebelah kanan */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center items-start px-6 py-8 text-left">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-start px-4 py-8 text-left">
             <h2 className="text-2xl lg:text-3xl text-primary font-semibold mb-4">
               Perusahaan Pabrik Tekstil - CV. Mutiara Elasticindo
             </h2>

@@ -42,7 +42,7 @@ export default function HomeMenu() {
     <section className="mt-20 pt-24" id="product">
       <div className="text-center">
         <SectionHeaders
-          subHeader="DEVISI"
+          subHeader="DIVISI"
           mainHeader="Kami mengerjakan pembuatan Karet elastis, Tali Elastis, Corong BH dan Korset."
         />
       </div>
@@ -86,7 +86,7 @@ export default function HomeMenu() {
       {/* Tombol Lihat Semua Devisi */}
       <div className="text-center mt-8">
         <Link href="/devisi">
-          <button className="bg-red-500 text-white py-3 px-6 rounded-lg font-semibold shadow-lg hover:bg-red-600 transition">
+          <button className="bg-red-500 text-white py-3 px-6 rounded-lg font-semibold shadow-lg hover:bg-red-600 transition mb-16">
             Lihat Semua Devisi
           </button>
         </Link>

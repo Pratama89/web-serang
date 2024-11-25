@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Right from "../icons/Right";
 import Link from "next/link";
-import { Carousel } from "flowbite-react";
 
 export default function Hero() {
   return (
@@ -9,14 +7,6 @@ export default function Hero() {
       className="relative bg-white flex items-center justify-center h-[75vh] w-full overflow-hidden"
       id="home">
       {/* Background Image */}
-      {/* <video
-        className="absolute z-0 w-full h-full object-cover"
-        src="/img/rajut-depan.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      ></video> */}
       <Image
         src="/laminating-hero.jpg"
         alt="Hero Background"
@@ -30,28 +20,32 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
 
       {/* Content */}
-      <div className="relative z-20 text-center text-white px-6 max-w-4xl">
-        <h1 className="text-5xl font-bold leading-snug">
-          <span className="text-primary">CV. Mutiara</span> Elasticondo
+      <div
+        className="relative z-20 text-center text-white px-6 max-w-4xl opacity-0 animate-fade-in"
+      >
+        <h1 className="text-2xl md:text-5xl font-bold leading-snug animate-slide-in">
+          <span className="text-primary">CV. Mutiara</span> Elasticindo
         </h1>
-        <p className="mt-4 text-lg">
-        Berdiri di garis depan industri tekstil, kami berkomitmen untuk memberikan produk yang tahan lama, inovatif, dan dapat diandalkan untuk setiap kebutuhan Anda
+        <p className="mt-4 text-sm md:text-lg">
+          Berdiri di garis depan industri tekstil, kami berkomitmen untuk
+          memberikan produk yang tahan lama, inovatif, dan dapat diandalkan
+          untuk setiap kebutuhan Anda
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           {/* Tombol Layanan */}
           <Link href="https://wa.link/h7ywr2" target="_blank">
-          <button className="bg-primary text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-red-700 transition">
-          Jelajahi Produk Kami
-          </button>
+            <button className="bg-primary text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-red-700 transition">
+              Jelajahi Produk Kami
+            </button>
           </Link>
           {/* Tombol Kontak */}
           <Link href="https://wa.link/h7ywr2" target="_blank">
             <button className="bg-white text-black font-medium px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition">
-            Hubungi Kami untuk Penawaran
+              Hubungi Kami untuk Penawaran
             </button>
           </Link>
         </div>
-      </div>     
+      </div>
     </section>
   );
 }

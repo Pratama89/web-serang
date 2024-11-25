@@ -17,8 +17,8 @@ export default function Products() {
       name: "Kami Memproduksi Tali untuk BH",
       description:
         "Kami memproduksi tali berkualitas tinggi untuk bra (BH), dirancang dengan perhatian khusus pada kenyamanan, kekuatan, dan estetika. Tali-tali kami tersedia dalam berbagai ukuran, warna, dan desain untuk mendukung kebutuhan produksi bra yang stylish dan fungsional, sekaligus memastikan daya tahan dan performa terbaik.",
-      media: "/img/rajut2.JPG",
-      type: "image",
+      media: "/img/pembuatan-tali.mp4",
+      type: "video",
       link: "/products/tali",
     },
     {
@@ -26,8 +26,8 @@ export default function Products() {
       name: "Kami memproduksi Corong untuk BH",
       description:
         "Kami memproduksi corong untuk bra (BH) dengan desain yang presisi dan material berkualitas tinggi. Corong kami dirancang untuk memberikan bentuk dan dukungan optimal, memastikan kenyamanan serta daya tahan yang lebih lama. Produk kami ideal untuk digunakan dalam berbagai model bra, mendukung desain yang ergonomis dan fungsional.",
-      media: "/img/rajut3.JPG",
-      type: "image",
+      media: "/img/produksi-corong.mp4",
+      type: "video",
       link: "/products/corong",
     },
     {
@@ -43,7 +43,7 @@ export default function Products() {
   ];
 
   return (
-    <section id="products" className="py-12 bg-gray-100">
+    <section id="products" className="py-12 bg-white">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-semibold text-red-500">Produk Kami</h2>
         <p className="mt-2 text-lg text-gray-600">
