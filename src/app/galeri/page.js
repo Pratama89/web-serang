@@ -9,10 +9,10 @@ export default function Galeri() {
   ];
 
   const fotoDivisi = [
-    { src: "/img/rajut1.jpg", alt: "Divisi 1" },
-    { src: "/img/rajut2.jpg", alt: "Divisi 2" },
-    { src: "/img/rajut3.jpg", alt: "Divisi 3" },
-    { src: "/img/rajut4.jpg", alt: "Divisi 4" },
+    { src: "/img/rajut1.JPG", alt: "Divisi 1" },
+    { src: "/img/rajut2.JPG", alt: "Divisi 2" },
+    { src: "/img/rajut3.JPG", alt: "Divisi 3" },
+    { src: "/img/rajut4.JPG", alt: "Divisi 4" },
   ];
 
   const fotoProsesProduksi = [
