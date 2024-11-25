@@ -16,7 +16,7 @@ export default function HomeMenu() {
       title: "Gulung Benang",
       description:
         "Divisi Gulung Benang adalah proses menggulung benang dari gulungan kecil ke beam (gulungan besar) untuk persiapan produksi lebih lanjut, seperti dalam proses tenun atau rajut.",
-      image: "/img/rajut2.jpg",
+      image: "/img/rajut2.JPG",
       link: "https://wa.link/h7ywr2",
       type: "image",
     },
