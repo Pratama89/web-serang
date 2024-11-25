@@ -37,6 +37,20 @@ export default function Devisi() {
       image: "/img/rajut5.jpg", // Ganti dengan path gambar yang sesuai
       type: "image",
     },
+    {
+      title: "Celup / Pewarnaan",
+      description:
+        "Mencelup atau mewarnakan kain untuk menghasilkan warna yang lebih cerah dan tahan lama.",
+      image: "/img/pewarnaan.mp4", // Ganti dengan path gambar yang sesuai
+      type: "video",
+    },
+    {
+      title: "Packing/Finishing",
+      description:
+        "Melakukan packing dan finishing untuk memastikan produk siap untuk penjualan.",
+      image: "/img/finishing.mp4", // Ganti dengan path gambar yang sesuai
+      type: "video",
+    },
   ];
 
   return (
