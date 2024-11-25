@@ -6,7 +6,7 @@ export default function Devisi() {
       title: "Gulung Covering",
       description:
         "Proses penggulungan benang yang telah melalui tahap covering. Hasil gulungan dijamin presisi dan sesuai dengan standar kualitas tertinggi.",
-      image: "/img/rajut1.jpg", // Ganti dengan path gambar yang sesuai
+      image: "/img/rajut1.JPG", // Ganti dengan path gambar yang sesuai
       type: "image",
     },
     {
@@ -20,7 +20,7 @@ export default function Devisi() {
       title: "Gulung Benang",
       description:
         "Menggulung benang secara rapi untuk memastikan kualitas produksi berikutnya tetap konsisten.",
-      image: "/img/rajut3.jpg", // Ganti dengan path gambar yang sesuai
+      image: "/img/rajut3.JPG", // Ganti dengan path gambar yang sesuai
       type: "image",
     },
     {
@@ -34,7 +34,7 @@ export default function Devisi() {
       title: "Sortir Grey",
       description:
         "Menyortir kain grey berdasarkan standar kualitas sebelum proses lanjutan.",
-      image: "/img/rajut5.jpg", // Ganti dengan path gambar yang sesuai
+      image: "/img/rajut5.JPG", // Ganti dengan path gambar yang sesuai
       type: "image",
     },
     {
