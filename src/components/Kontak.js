@@ -8,7 +8,7 @@ import {
 export default function Kontak() {
   return (
     <section id="kontak" className="bg-white py-32 mt-16">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+      <div className="lg:container mx-auto px-6 md:px-12 lg:px-20">
         {/* Header */}
         <h2
           className="text-4xl font-bold mb-8 text-center"

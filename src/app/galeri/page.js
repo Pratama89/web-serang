@@ -23,7 +23,7 @@ export default function Galeri() {
   ];
 
   return (
-    <div className="container mx-auto px-6 py-16">
+    <div className="lg:container mx-auto px-6 py-16">
       <h1 className="text-4xl font-bold text-center text-red-500 mb-10">Galeri</h1>
 
       {/* Foto Produk */}
