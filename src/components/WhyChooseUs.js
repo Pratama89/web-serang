@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
     },
     {
       title: "PRODUK BERKUALITAS",
-      description: "Kami memprioritaskan kualitas dalam pembuatan Tali BH, Karet BH, dan Corong BH, dengan menggunakan material terbaik untuk memastikan kenyamanan dan ketahanan produk.",
+      description: "Kami memprioritaskan kualitas dalam pembuatan Tali Bra, Karet Bra, dan Corong Bra, dengan menggunakan material terbaik untuk memastikan kenyamanan dan ketahanan produk.",
       icon: <FaTags className="text-4xl text-green-500" />,
     },
     {
@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
     },
     {
       title: "FOKUS PASAR GLOBAL",
-      description: "Kami dapat memenuhi permintaan Tali BH, Karet BH, dan Corong BH untuk pasar lokal maupun internasional, dengan kemampuan untuk mendukung merek-merek lokal seperti Winalin dan Pokabee.",
+      description: "Kami dapat memenuhi permintaan Tali Bra, Karet Bra, dan Corong BH untuk pasar lokal maupun internasional, dengan kemampuan untuk mendukung merek-merek lokal seperti Winalin dan Pokabee.",
       icon: <FaGlobe className="text-4xl text-red-500" />,
     },
     {

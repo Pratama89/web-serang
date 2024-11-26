@@ -10,13 +10,13 @@ export default function About() {
         </h2>
         
         {/* Gambar */}
-        <div className="flex w-full overflow-hidden h-[200px] md:h-[300px] mb-12 justify-center">
+        <div className="flex w-full overflow-hidden h-[200px] md:h-[300px]  lg:h-[400px] mb-12 justify-center">
           <Image
             src="/img/factory.JPG" // Sesuaikan path gambar
             alt="Pabrik CV. Mutiara Elasticindo"
             width={800}
             height={600}
-            className="rounded-lg shadow-lg object-cover w-full max-w-4xl h-auto"
+            className="rounded-lg shadow-lg object-cover w-full  max-w-4xl h-auto"
           />
         </div>
 
@@ -30,13 +30,13 @@ export default function About() {
           </p>
           <ul className="list-disc list-inside ml-5 text-lg">
             <li>
-              <strong>Karet BH (Bra Elastics):</strong> Menghasilkan karet elastis berkualitas tinggi untuk mendukung kenyamanan dan fleksibilitas produk BH.
+              <strong>Karet BRA (Bra Elastics):</strong> Menghasilkan karet elastis berkualitas tinggi untuk mendukung kenyamanan dan fleksibilitas produk BRA.
             </li>
             <li>
-              <strong>Tali BH (Bra Straps):</strong> Menyediakan tali BH dengan desain fungsional dan estetis untuk memenuhi kebutuhan pelanggan.
+              <strong>Tali BRA (Bra Straps):</strong> Menyediakan tali BRA dengan desain fungsional dan estetis untuk memenuhi kebutuhan pelanggan.
             </li>
             <li>
-              <strong>Corong BH (Bra Cups):</strong> Memproduksi corong BH dengan presisi dan daya tahan yang terjamin.
+              <strong>Corong BRA (Bra Cups):</strong> Memproduksi corong BRA dengan presisi dan daya tahan yang terjamin.
             </li>
             <li>
               <strong>Korset Elastis:</strong> Menghadirkan korset elastis yang mendukung kenyamanan dan fungsionalitas.

@@ -4,7 +4,7 @@ export default function Galeri() {
   const fotoProduk = [
     { src: "/img/corong/corong1.jpeg", alt: "Produk 1" },
     { src: "/img/karet/karet2.jpeg", alt: "Produk 2" },
-    { src: "/img/tali/tali6.jpeg", alt: "Produk 3" },
+    { src: "/img/tali/tali7.jpeg", alt: "Produk 3" },
     { src: "/img/corong/corong4.jpeg", alt: "Produk 4" },
   ];
 

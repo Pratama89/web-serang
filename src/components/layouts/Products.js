@@ -5,27 +5,27 @@ export default function Products() {
   const products = [
     {
       id: 1,
-      name: "Kami Memproduksi Karet Elastis untuk BH",
+      name: "Kami Memproduksi Karet Elastis untuk BRA",
       description:
-        "Kami memproduksi karet elastis berkualitas tinggi khusus untuk bra (BH), dirancang untuk memberikan kenyamanan, daya tahan, dan fleksibilitas maksimal. Produk kami menggunakan bahan premium dan teknologi terkini, memastikan elastisitas yang optimal serta mendukung desain bra modern yang stylish dan fungsional.",
+        "Kami memproduksi karet elastis berkualitas tinggi khusus untuk Bra (BH), dirancang untuk memberikan kenyamanan, daya tahan, dan fleksibilitas maksimal. Produk kami menggunakan bahan premium dan teknologi terkini, memastikan elastisitas yang optimal serta mendukung desain bra modern yang stylish dan fungsional.",
       media: "/img/pembuatan-karet.mp4",
       type: "video",
       link: "/products/karet",
     },
     {
       id: 2,
-      name: "Kami Memproduksi Tali untuk BH",
+      name: "Kami Memproduksi Tali untuk BRA",
       description:
-        "Kami memproduksi tali berkualitas tinggi untuk bra (BH), dirancang dengan perhatian khusus pada kenyamanan, kekuatan, dan estetika. Tali-tali kami tersedia dalam berbagai ukuran, warna, dan desain untuk mendukung kebutuhan produksi bra yang stylish dan fungsional, sekaligus memastikan daya tahan dan performa terbaik.",
+        "Kami memproduksi tali berkualitas tinggi untuk Bra (BH), dirancang dengan perhatian khusus pada kenyamanan, kekuatan, dan estetika. Tali-tali kami tersedia dalam berbagai ukuran, warna, dan desain untuk mendukung kebutuhan produksi bra yang stylish dan fungsional, sekaligus memastikan daya tahan dan performa terbaik.",
       media: "/img/pembuatan-tali.mp4",
       type: "video",
       link: "/products/tali",
     },
     {
       id: 3,
-      name: "Kami memproduksi Corong untuk BH",
+      name: "Kami memproduksi Corong untuk BRA",
       description:
-        "Kami memproduksi corong untuk bra (BH) dengan desain yang presisi dan material berkualitas tinggi. Corong kami dirancang untuk memberikan bentuk dan dukungan optimal, memastikan kenyamanan serta daya tahan yang lebih lama. Produk kami ideal untuk digunakan dalam berbagai model bra, mendukung desain yang ergonomis dan fungsional.",
+        "Kami memproduksi corong untuk Bra (BH) dengan desain yang presisi dan material berkualitas tinggi. Corong kami dirancang untuk memberikan bentuk dan dukungan optimal, memastikan kenyamanan serta daya tahan yang lebih lama. Produk kami ideal untuk digunakan dalam berbagai model bra, mendukung desain yang ergonomis dan fungsional.",
       media: "/img/produksi-corong.mp4",
       type: "video",
       link: "/products/corong",

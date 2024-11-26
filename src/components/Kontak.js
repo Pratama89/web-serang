@@ -17,7 +17,7 @@ export default function Kontak() {
           Hubungi Kami
         </h2>
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-          CV. Mutiara Elasticindo adalah Produsen Karet BH, Tali BH, Corong BH,
+          CV. Mutiara Elasticindo adalah Produsen Karet BRA, Tali BRA, Corong BRA,
           dan Korset. Untuk pertanyaan atau konsultasi bisnis, silakan hubungi
           kami melalui informasi kontak di bawah ini.
         </p>

@@ -75,32 +75,32 @@ export default function Header() {
             navbar ? "block" : "hidden"
           } fixed top-0 left-0 w-full h-full bg-white p-8 space-y-6 text-center text-gray-700 font-medium md:hidden`}>
           <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="#home" onClick={() => setNavbar(false)}>
+            <Link href="/#home" onClick={() => setNavbar(false)}>
               Home
             </Link>
           </li>
           <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="#about" onClick={() => setNavbar(false)}>
+            <Link href="/products" onClick={() => setNavbar(false)}>
               Produk
             </Link>
           </li>
           <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="#product" onClick={() => setNavbar(false)}>
+            <Link href="/about" onClick={() => setNavbar(false)}>
               Tentang
             </Link>
           </li>
           <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="#contact" onClick={() => setNavbar(false)}>
+            <Link href="/devisi" onClick={() => setNavbar(false)}>
               Devisi
             </Link>
           </li>
           <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="#contact" onClick={() => setNavbar(false)}>
+            <Link href="/kontak" onClick={() => setNavbar(false)}>
               Kontak
             </Link>
           </li>
           <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="#contact" onClick={() => setNavbar(false)}>
+            <Link href="/galeri" onClick={() => setNavbar(false)}>
               Galeri
             </Link>
           </li>

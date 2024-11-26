@@ -23,7 +23,7 @@ export default function HomeMenu() {
     {
       title: "Rajut Benang",
       description:
-        "Rajut Benang adalah proses pengolahan benang menjadi material elastis seperti karet BH, tali BH, atau komponen lain untuk bra. Proses ini memastikan hasil rajutan yang kuat, fleksibel, dan sesuai dengan standar kualitas tinggi untuk mendukung kenyamanan serta fungsi produk.",
+        "Rajut Benang adalah proses pengolahan benang menjadi material elastis seperti Karet Bra, Tali Bra, atau komponen lain untuk Bra. Proses ini memastikan hasil rajutan yang kuat, fleksibel, dan sesuai dengan standar kualitas tinggi untuk mendukung kenyamanan serta fungsi produk.",
       image: "/img/rajut-depan2.mp4", // Ganti dengan path video
       link: "https://wa.link/h7ywr2",
       type: "video", // Set tipe sebagai video
@@ -31,7 +31,7 @@ export default function HomeMenu() {
     {
       title: "Pewarnaan dan Penyelesaian",
       description:
-        "Pewarnaan dan Penyelesaian adalah proses memberikan warna pada material, seperti karet atau tali BH, serta tahap akhir untuk meningkatkan kualitas produk. Proses ini memastikan warna yang tahan lama, merata, dan sesuai standar, sekaligus menyempurnakan hasil akhir agar produk siap digunakan atau dipasarkan.",
+        "Pewarnaan dan Penyelesaian adalah proses memberikan warna pada material, seperti karet atau tali Bra, serta tahap akhir untuk meningkatkan kualitas produk. Proses ini memastikan warna yang tahan lama, merata, dan sesuai standar, sekaligus menyempurnakan hasil akhir agar produk siap digunakan atau dipasarkan.",
       image: "/img/pewarnaan.mp4",
       link: "https://wa.link/h7ywr2",
       type: "video",
