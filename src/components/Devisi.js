@@ -13,7 +13,7 @@ export default function Devisi() {
       title: "Covering",
       description:
         "Lapisan pelindung pada benang untuk meningkatkan kekuatan dan elastisitas menggunakan mesin modern.",
-      image: "/img/covering-benang.png", // Ganti dengan path gambar yang sesuai
+      image: "/img/coveringbenang.JPG", // Ganti dengan path gambar yang sesuai
       type: "image",
     },
     {
@@ -55,7 +55,7 @@ export default function Devisi() {
 
   return (
     <section id="devisi" className="bg-white py-16 mt-16">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+      <div className="lg:container mx-auto px-6 md:px-12 lg:px-20">
         {/* Header */}
         <h2
           className="text-4xl font-bold mb-8 text-center"

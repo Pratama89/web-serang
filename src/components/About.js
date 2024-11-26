@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section id="about" className="bg-white py-16 justify-center">
-      <div className="container mx-auto px-6 mt-16 md:px-12 lg:px-20">
+      <div className="lg:container mx-auto px-6 mt-16 md:px-12 lg:px-20">
         {/* Header */}
         <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center" style={{ color: "#FF5733" }}>
           Tentang Kami
