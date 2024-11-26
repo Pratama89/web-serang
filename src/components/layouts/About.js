@@ -15,7 +15,7 @@ export default function About() {
             <SectionHeaders subHeader="TENTANG KAMI" mainHeader="" />
           </div>
 
-          <div className="flex flex-col lg:flex-row w-full  bg-white  mx-auto rounded-lg shadow-md overflow-hidden">
+          <div className="flex flex-col lg:flex-row w-full  bg-white lg:container md:container  mx-auto rounded-lg shadow-md overflow-hidden">
             {/* Parallax Gambar di Sebelah Kiri */}
             <Parallax y={[-20, 20]} tagOuter="div" className="relative w-full lg:w-1/2">
               <div className="h-[200px] lg:h-[500px]">

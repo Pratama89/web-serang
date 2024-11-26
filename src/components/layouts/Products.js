@@ -43,14 +43,14 @@ export default function Products() {
   ];
 
   return (
-    <section id="products" className="py-12 bg-white">
+    <section id="products" className="py-12 bg-white lg:container mx-auto">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-semibold text-red-500">Produk Kami</h2>
         <p className="mt-2 text-lg text-gray-600">
           Kami Memproduksi Karet, Tali dan Corong untuk kebutuhan konfeksi Anda.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {products.map((product) => (
           <div
             key={product.id}
