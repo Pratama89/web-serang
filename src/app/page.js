@@ -8,6 +8,8 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Perbaikan from '@/components/layouts/Perbaikan';
 import { motion } from 'framer-motion';
 
+
+
 export default function Home() {
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },

@@ -84,7 +84,7 @@ export default function Products() {
                 <Link href={product.link}>
                   {/* Tidak perlu elemen <a> */}
                   <button className="inline-block bg-red-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-red-600 transition">
-                    Lihat Detail
+                    Lihat Produk ini
                   </button>
                 </Link>
               </div>

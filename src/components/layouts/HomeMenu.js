@@ -43,7 +43,7 @@ export default function HomeMenu() {
       <div className="text-center">
         <SectionHeaders
           subHeader="DIVISI"
-          mainHeader="Kami mengerjakan pembuatan Karet elastis, Tali Elastis, Corong BH dan Korset."
+          mainHeader="Kami mengerjakan pembuatan Karet Elastis, Tali Elastis, Corong BH dan Korset."
         />
       </div>
       <div className="grid grid-cols-2 gap-6 mt-8 w-full px-20 xs:grid-cols-1 xs:p-5 xs:gap-4">

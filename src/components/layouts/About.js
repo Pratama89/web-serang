@@ -20,7 +20,7 @@ export default function About() {
             <Parallax y={[-20, 20]} tagOuter="div" className="relative w-full lg:w-1/2">
               <div className="h-[200px] lg:h-[500px]">
                 <Image
-                  src="/img/rajut3.JPG"
+                  src="/factory4.JPG"
                   alt="Gambar"
                   fill
                   sizes="(max-width: 768px) 100vw, (min-width: 1024px) 50vw"
@@ -48,7 +48,7 @@ export default function About() {
                 <br />
                 <br />
                 Dengan pengalaman hampir satu dekade, kami telah menjadi mitra
-                terpercaya bagi banyak pelaku usaha di dalam negeri maupun luar negeri.
+                terpercaya bagi banyak pelaku usaha di beberapa daerah Indonesia.
               </p>
               <Link href="/about">
                 <button className="bg-primary text-white px-4 py-3 rounded-full shadow-md hover:bg-red-700 transition">
