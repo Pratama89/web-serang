@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="relative bg-white flex items-center justify-center h-[75vh] w-full overflow-hidden"
+      className="relative bg-white flex items-center justify-center h-[100vh] w-full overflow-hidden"
       id="home">
       {/* Background Image */}
       <Image
-        src="/laminating-hero.jpg"
+        src="/laminating-hero.JPG"
         alt="Hero Background"
         layout="fill"
         objectFit="cover"
@@ -17,7 +17,7 @@ export default function Hero() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-10 z-10"></div>
 
       {/* Content */}
       <div
@@ -27,9 +27,7 @@ export default function Hero() {
           <span className="text-primary">CV. Mutiara</span> Elasticindo
         </h1>
         <p className="mt-4 text-sm md:text-lg">
-          Berdiri di garis depan industri tekstil, kami berkomitmen untuk
-          memberikan produk yang tahan lama, inovatif, dan dapat diandalkan
-          untuk setiap kebutuhan Anda
+        Kami menghadirkan solusi tekstil elastis terbaik untuk mendukung berbagai industri. Dengan teknologi modern dan standar kualitas tinggi, kami siap memenuhi kebutuhan Anda.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           {/* Tombol Layanan */}

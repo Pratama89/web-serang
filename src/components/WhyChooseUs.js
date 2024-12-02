@@ -20,8 +20,8 @@ export default function WhyChooseUs() {
       icon: <FaTags className="text-4xl text-yellow-500" />,
     },
     {
-      title: "FOKUS PASAR GLOBAL",
-      description: "Kami dapat memenuhi permintaan Tali Bra, Karet Bra, dan Corong BH untuk pasar lokal maupun internasional, dengan kemampuan untuk mendukung merek-merek lokal seperti Winalin dan Pokabee.",
+      title: "FOKUS PASAR LOKAL",
+      description: "Kami dapat memenuhi permintaan Tali Bra, Karet Bra, dan Corong BH untuk pasar lokal, dengan kemampuan untuk mendukung merek-merek lokal seperti Winalin dan Pokabee.",
       icon: <FaGlobe className="text-4xl text-red-500" />,
     },
     {
@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
     },
     {
       title: "MEREK TERKENAL",
-      description: "Kami telah menjadi pemasok untuk merek-merek terkenal di seluruh dunia, menawarkan produk yang mendukung kenyamanan dan kualitas pakaian dalam.",
+      description: "Kami telah menjadi pemasok untuk merek-merek terkenal di beberapa merek seperti Winalin dan Pokabee, menawarkan produk yang mendukung kenyamanan dan kualitas pakaian dalam.",
       icon: <FaTrademark className="text-4xl text-orange-500" />,
     },
   ];

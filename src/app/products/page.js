@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function ProductsPage() {
   return (
-    <section className="bg-white py-16">
-      <div className="lg:container mx-auto px-6">
+    <section className="bg-white  border border-red-600">
+      <div className="mx-auto ">
         <Products />
       </div>
     </section>

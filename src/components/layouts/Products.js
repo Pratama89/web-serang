@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ProductHero from "@/components/ProductHero";
 
 export default function Products() {
   const products = [
@@ -39,59 +40,65 @@ export default function Products() {
       type: "image",
       link: "/products/korset",
     },
-    
   ];
 
   return (
-    <section id="products" className="py-12 bg-white lg:container mx-auto">
-      <div className="text-center mb-8">
-        <h2 className="text-4xl font-semibold text-red-500">Produk Kami</h2>
-        <p className="mt-2 text-lg text-gray-600">
-          Kami Memproduksi Karet, Tali dan Corong untuk kebutuhan konfeksi Anda.
-        </p>
-      </div>
-      <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-8">
-        {products.map((product) => (
-          <div
-            key={product.id}
-            className="bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 hover:shadow-xl">
-            {/* Media: Gambar atau Video */}
-            <div className="relative w-full h-64">
-              {product.type === "video" ? (
-                <video
-                  src={product.media}
-                  className="w-full h-full object-cover rounded-t-lg"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                ></video>
-              ) : (
-                <Image
-                  src={product.media}
-                  alt={product.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="w-full h-full"
-                />
-              )}
-            </div>
-            {/* Deskripsi Produk */}
-            <div className="p-6">
-              <h3 className="text-xl font-semibold">{product.name}</h3>
-              <p className="mt-4 text-gray-600">{product.description}</p>
-              <div className="mt-4">
-                <Link href={product.link}>
-                  {/* Tidak perlu elemen <a> */}
-                  <button className="inline-block bg-red-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-red-600 transition">
-                    Lihat Produk ini
-                  </button>
-                </Link>
+    <section className="max-w-full mx-auto ">
+      {/* Hero Section */}
+      <ProductHero />
+
+      {/* Produk Kami Section */}
+      <section id="products" className="py-12 bg-white max-w-full mx-auto">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-semibold text-red-500">Produk Kami</h2>
+          <p className="mt-2 text-lg text-gray-600">
+            Kami Memproduksi Karet, Tali dan Corong untuk kebutuhan konfeksi Anda.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 hover:shadow-xl"
+            >
+              {/* Media: Gambar atau Video */}
+              <div className="relative w-full h-64">
+                {product.type === "video" ? (
+                  <video
+                    src={product.media}
+                    className="w-full h-full object-cover rounded-t-lg"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  ></video>
+                ) : (
+                  <Image
+                    src={product.media}
+                    alt={product.name}
+                    layout="fill"
+                    objectFit="cover"
+                    className="w-full h-full"
+                  />
+                )}
+              </div>
+              {/* Deskripsi Produk */}
+              <div className="p-6">
+                <h3 className="text-xl font-semibold">{product.name}</h3>
+                <p className="mt-4 text-gray-600">{product.description}</p>
+                <div className="mt-4">
+                  <Link href={product.link}>
+                    {/* Tidak perlu elemen <a> */}
+                    <button className="inline-block bg-red-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-red-600 transition">
+                      Lihat Produk ini
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </section>
     </section>
   );
 }

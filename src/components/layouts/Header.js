@@ -1,61 +1,81 @@
 "use client";
 
-import { signOut, useSession } from "next-auth/react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation"; // Import usePathname
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   const [color, setColor] = useState(false);
+  const pathname = usePathname(); // Mendapatkan path saat ini
 
-  // change color sat di scroll
+  // Fungsi untuk mengubah warna navbar saat di scroll
   const changeColor = () => {
     if (window.scrollY >= 90) {
-      setColor(true);
+      setColor(true); // Set background menjadi putih dan teks gelap setelah scroll
     } else {
-      setColor(false);
+      setColor(false); // Tetap transparan di atas halaman
     }
   };
 
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", changeColor);
-  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", changeColor);
+      return () => window.removeEventListener("scroll", changeColor);
+    }
+  }, []);
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
-      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
-        {/* Logo */}
-        <Link href={"/"}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+        color ? "bg-white text-gray-800 shadow-md" : "bg-transparent text-white"
+      }`}>
+      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center ">
+        {/* Logo dengan Teks */}
+        <Link href={"/"} className="flex items-center space-x-2 ">
           <Image
-            src="/logomutiaraserang.png"
+            src="/Icon Mutiara serang.png"
             alt="Logo"
-            width={300}
-            height={150}
+            width={40}
+            height={40}
             priority
-            className="cursor-pointer"
+            className="cursor-pointer py-2"
           />
+          <span
+            className={`text-xl font-semibold ${
+              color ? "text-gray-800" : "text-white"
+            }`}>
+            CV. MUTIARA ELASTICONDO
+          </span>
         </Link>
+
         {/* Navigation Links */}
-        <ul className="hidden md:flex gap-8 items-center justify-center text-gray-700 font-medium">
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/#home">Home</Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/products">Produk</Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/about">Tentang</Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/devisi">Divisi</Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/kontak">Kontak</Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/galeri">Galeri</Link>
-          </li>
+        <ul className="hidden md:flex gap-4 items-center justify-center font-medium">
+          {[
+            { href: "/", label: "Home" },
+            { href: "/products", label: "Produk" },
+            { href: "/about", label: "Tentang" },
+            { href: "/divisi", label: "Divisi" },
+            { href: "/kontak", label: "Kontak" },
+            { href: "/galeri", label: "Galeri" },
+          ].map((menu) => (
+            <li
+              key={menu.href}
+              className={`group transition-all duration-300 ease-in-out ${
+                pathname === menu.href
+                  ? "bg-[#ff4b4b] text-white"
+                  : "hover:bg-[#ff4b4b] hover:text-white"
+              }`}>
+              <Link
+                href={menu.href}
+                className={`block py-2 px-6 ${
+                  color && pathname !== menu.href ? "text-gray-800" : "text-white"
+                }`}>
+                {menu.label}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Hamburger Menu (Mobile) */}
@@ -69,43 +89,31 @@ export default function Header() {
             height={30}
           />
         </button>
+
         {/* Mobile Menu */}
         <ul
           className={`${
             navbar ? "block" : "hidden"
-          } fixed top-0 left-0 w-full h-full bg-white p-8 space-y-6 text-center text-gray-700 font-medium md:hidden`}>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/#home" onClick={() => setNavbar(false)}>
-              Home
-            </Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/products" onClick={() => setNavbar(false)}>
-              Produk
-            </Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/about" onClick={() => setNavbar(false)}>
-              Tentang
-            </Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/devisi" onClick={() => setNavbar(false)}>
-              Devisi
-            </Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/kontak" onClick={() => setNavbar(false)}>
-              Kontak
-            </Link>
-          </li>
-          <li className="hover:text-blue-600 transition hover:underline">
-            <Link href="/galeri" onClick={() => setNavbar(false)}>
-              Galeri
-            </Link>
-          </li>
+          } fixed top-0 left-0 w-full h-full bg-white p-8 space-y-6 text-center font-medium md:hidden`}>
+          {[
+            { href: "/", label: "Home" },
+            { href: "/products", label: "Produk" },
+            { href: "/about", label: "Tentang" },
+            { href: "/divisi", label: "Divisi" },
+            { href: "/kontak", label: "Kontak" },
+            { href: "/galeri", label: "Galeri" },
+          ].map((menu) => (
+            <li
+              key={menu.href}
+              className={`transition hover:underline ${
+                pathname === menu.href ? "text-[#ff4b4b]" : "hover:text-[#800000]"
+              }`}>
+              <Link href={menu.href} onClick={() => setNavbar(false)}>
+                {menu.label}
+              </Link>
+            </li>
+          ))}
         </ul>
-
       </div>
     </nav>
   );

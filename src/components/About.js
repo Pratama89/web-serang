@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 import { Swiper as SwiperCore, Navigation, Pagination, Autoplay } from "swiper";
+import ProductHero from "@/components/ProductHero";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default function About() {
@@ -23,7 +24,11 @@ export default function About() {
   }
 
   return (
-    <section id="about" className="bg-white py-16 justify-center">
+
+    
+    <section id="about" className="bg-white  justify-center">
+      {/* Hero Section */}
+      <ProductHero />
       <div className="lg:container mx-auto px-6 mt-16 md:px-12 lg:px-20">
         <h2
           className="text-4xl font-bold text-gray-800 mb-8 text-center"
@@ -50,7 +55,7 @@ export default function About() {
           <SwiperSlide>
             <div className="flex justify-center items-center h-[400px] md:h-[500px] lg:h-[600px] bg-white">
               <Image
-                src="/factory1.jpeg"
+                src="/factory3.jpg"
                 alt="Pabrik CV. Mutiara Elasticindo"
                 width={1200} // Lebar ditingkatkan
                 height={600} // Tinggi ditingkatkan
@@ -60,7 +65,7 @@ export default function About() {
           </SwiperSlide>
 
           {/* Slide Gambar 2 */}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="flex justify-center items-center h-[400px] md:h-[500px] lg:h-[600px] bg-white">
               <Image
                 src="/factory2.JPG"
@@ -70,20 +75,20 @@ export default function About() {
                 className="rounded-lg shadow-lg object-contain max-w-full max-h-full"
               />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           {/* Slide Gambar 3 */}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="flex justify-center items-center h-[400px] md:h-[500px] lg:h-[600px] bg-white">
               <Image
-                src="/factory3.jpg"
+                src="/factory1.jpeg"
                 alt="Pabrik CV. Mutiara Elasticindo"
                 width={1200} // Lebar ditingkatkan
                 height={600} // Tinggi ditingkatkan
                 className="rounded-lg shadow-lg object-contain max-w-full max-h-full"
               />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           {/* Slide Gambar 4 */}
           <SwiperSlide>

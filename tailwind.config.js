@@ -10,6 +10,11 @@ module.exports = {
     "./public/**/*.html",
     "node_modules/flowbite-react/lib/esm/**/*.js",
   ],
+  safelist: [
+    'bg-transparent',
+    'bg-white',
+    'shadow-md',
+  ],
   theme: {
     extend: {
       colors: {

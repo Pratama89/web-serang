@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProductHero from "@/components/ProductHero";
 
 export default function Galeri() {
   const fotoProduk = [
@@ -23,8 +24,10 @@ export default function Galeri() {
   ];
 
   return (
-    <div className="lg:container mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold text-center text-red-500 mb-10">Galeri</h1>
+    <div className="lg:container mx-auto ">
+      {/* Hero Section */}
+      <ProductHero />
+      <h1 className="text-4xl font-bold text-center text-red-500 mb-10 mt-12">Galeri</h1>
 
       {/* Foto Produk */}
       <section className="mb-16">

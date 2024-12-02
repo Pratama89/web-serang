@@ -1,63 +1,71 @@
 import Image from "next/image";
 import SectionHeaders from "./SectionHeader";
 import Link from "next/link";
+import {
+  FaLayerGroup,
+  FaYarn,
+  FaPalette,
+  FaBox,
+} from "react-icons/fa"; // Ikon divisi
 
 export default function HomeMenu() {
   const services = [
     {
       title: "Covering Benang",
-      description:
-        "Covering Benang adalah proses pemindahan benang dari gulungan besar ke gulungan yang lebih kecil dengan tujuan mempermudah proses selanjutnya atau penggunaan yang lebih praktis.",
+      icon: FaLayerGroup,
       image: "/img/covering-benang.png",
-      link: "https://wa.link/h7ywr2",
-      type: "image", // Tambahkan tipe konten
+      link: "/divisi",
+      type: "image",
     },
     {
       title: "Gulung Benang",
-      description:
-        "Divisi Gulung Benang adalah proses menggulung benang dari gulungan kecil ke beam (gulungan besar) untuk persiapan produksi lebih lanjut, seperti dalam proses tenun atau rajut.",
+      icon: FaYarn,
       image: "/img/rajut2.JPG",
-      link: "https://wa.link/h7ywr2",
+      link: "/divisi",
       type: "image",
     },
     {
       title: "Rajut Benang",
-      description:
-        "Rajut Benang adalah proses pengolahan benang menjadi material elastis seperti Karet Bra, Tali Bra, atau komponen lain untuk Bra. Proses ini memastikan hasil rajutan yang kuat, fleksibel, dan sesuai dengan standar kualitas tinggi untuk mendukung kenyamanan serta fungsi produk.",
-      image: "/img/rajut-depan2.mp4", // Ganti dengan path video
-      link: "https://wa.link/h7ywr2",
-      type: "video", // Set tipe sebagai video
+      icon: FaBox,
+      image: "/img/rajut-depan2.mp4",
+      link: "/divisi",
+      type: "video",
     },
     {
       title: "Pewarnaan dan Penyelesaian",
-      description:
-        "Pewarnaan dan Penyelesaian adalah proses memberikan warna pada material, seperti karet atau tali Bra, serta tahap akhir untuk meningkatkan kualitas produk. Proses ini memastikan warna yang tahan lama, merata, dan sesuai standar, sekaligus menyempurnakan hasil akhir agar produk siap digunakan atau dipasarkan.",
+      icon: FaPalette,
       image: "/img/pewarnaan.mp4",
-      link: "https://wa.link/h7ywr2",
+      link: "/divisi",
       type: "video",
     },
   ];
 
   return (
     <section className="mt-20 pt-24" id="product">
+      {/* Header */}
       <div className="text-center">
         <SectionHeaders
           subHeader="DIVISI"
           mainHeader="Kami mengerjakan pembuatan Karet Elastis, Tali Elastis, Corong BH dan Korset."
         />
       </div>
-      <div className="grid grid-cols-2 gap-6 mt-8 w-full px-20 xs:grid-cols-1 xs:p-5 xs:gap-4">
+
+      {/* Grid Gambar dan Video */}
+      <div className="grid grid-cols-1 md:grid-cols-4 mt-8">
         {services.map((service, index) => (
-          <div
+          <Link
+            href={service.link}
             key={index}
-            className="bg-gray-100 border shadow-lg rounded-lg flex flex-col lg:flex-row text-center items-center hover:bg-white transition-transform duration-200 hover:scale-105"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center"
           >
-            {/* Gambar atau Video */}
-            <div className="w-full lg:w-1/3">
+            {/* Media (Gambar atau Video) */}
+            <div className="relative w-full h-56 shadow-lg overflow-hidden">
               {service.type === "video" ? (
                 <video
                   src={service.image}
-                  className="h-56 w-full rounded-t-lg lg:rounded-lg object-cover"
+                  className="w-full h-full object-cover image-enlarge"
                   autoPlay
                   loop
                   muted
@@ -67,22 +75,22 @@ export default function HomeMenu() {
                 <Image
                   src={service.image}
                   alt={service.title}
-                  width={200}
-                  height={200}
-                  className="h-56 w-full rounded-t-lg lg:rounded-lg object-cover"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover image-enlarge"
                 />
               )}
+
+              {/* Overlay Ikon dan Teks */}
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center overlay-hover">
+                <service.icon className="text-white text-4xl mb-2" />
+                <h1 className="text-white font-semibold text-lg">{service.title}</h1>
+              </div>
             </div>
-            {/* Konten */}
-            <div className="w-full lg:w-2/3 p-4">
-              <h1 className="font-semibold text-xl lg:text-2xl mb-2">
-                {service.title}
-              </h1>
-              <p className="text-sm lg:text-base text-gray-600">{service.description}</p>
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
+
       {/* Tombol Lihat Semua Devisi */}
       <div className="text-center mt-8">
         <Link href="/devisi">

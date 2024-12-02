@@ -4,11 +4,14 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
+import ProductHero from "@/components/ProductHero";
 
 export default function Kontak() {
   return (
-    <section id="kontak" className="bg-white py-32 mt-16">
-      <div className="lg:container mx-auto px-6 md:px-12 lg:px-20">
+    <section id="kontak" className="bg-white ">
+      {/* Hero Section */}
+      <ProductHero />
+      <div className="lg:container mx-auto px-6  mt-16 md:px-12 lg:px-20">
         {/* Header */}
         <h2
           className="text-4xl font-bold mb-8 text-center"
@@ -70,7 +73,7 @@ export default function Kontak() {
           <h3 className="text-2xl font-semibold text-center mb-6">
             Lokasi Kami
           </h3>
-          <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
+          <div className="w-full h-96 rounded-lg overflow-hidden shadow-md mb-24">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18870.1540435797!2d106.24859046752003!3d-6.135912600325453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41f5155a2ee657%3A0x2862c37fbe141189!2sMutiara%20elastis%20new!5e0!3m2!1sen!2sus!4v1732334957662!5m2!1sen!2sus" 
               width="100%"

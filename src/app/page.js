@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import About from '@/components/layouts/About';
 import Contact from '@/components/layouts/Contact';
 import Hero from '@/components/layouts/Hero';
@@ -7,10 +8,25 @@ import HomeMenu from '@/components/layouts/HomeMenu';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Perbaikan from '@/components/layouts/Perbaikan';
 import { motion } from 'framer-motion';
-
-
+import Loader from '@/components/Loader'; // Import Loader
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulasi waktu loading selama 2 detik
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Ubah waktu jika perlu
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Jika masih loading, tampilkan Loader
+  if (isLoading) {
+    return <Loader />;
+  }
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
