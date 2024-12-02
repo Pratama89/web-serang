@@ -6,7 +6,6 @@ import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
 import { SessionProvider } from "next-auth/react";
 import { AppProvider } from "@/components/AppContext";
-import Head from "next/head";
 import { useState, useEffect } from "react";
 import Loader from "@/components/Loader"; // Pastikan path ini sesuai
 
@@ -26,20 +25,22 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={roboto.className}>
+      <body className={`${roboto.className} ${isLoading ? "overflow-hidden" : ""}`}>
         {/* Loader akan ditampilkan jika isLoading true */}
         {isLoading && <Loader />}
         
-        <main className="max-w-full mx-auto ">
-          <AppProvider>
-            <Header />
-            {/* Tampilkan children jika loading selesai */}
-            <div className={`transition-opacity duration-300 ${isLoading ? "opacity-0" : "opacity-100"}`}>
-              {children}
-            </div>
-            <Footer />
-          </AppProvider>
-        </main>
+        {!isLoading && (
+          <main className="max-w-full mx-auto">
+            <AppProvider>
+              <Header />
+              {/* Konten halaman */}
+              <div className="opacity-100">
+                {children}
+              </div>
+              <Footer />
+            </AppProvider>
+          </main>
+        )}
       </body>
     </html>
   );
