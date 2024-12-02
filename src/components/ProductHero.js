@@ -19,23 +19,23 @@ export default function ProductHero() {
       break;
     case "/about":
       pageTitle = "TENTANG";
-      backgroundImage = "/img/rajut3.jpg";
+      backgroundImage = "/img/rajut3.JPG";
       break;
     case "/divisi":
       pageTitle = "DIVISI";
-      backgroundImage = "/img/rajut2.jpg";
+      backgroundImage = "/img/rajut2.JPG";
       break;
     case "/kontak":
       pageTitle = "KONTAK";
-      backgroundImage = "/img/rajut1.jpg";
+      backgroundImage = "/img/rajut1.JPG";
       break;
     case "/galeri":
       pageTitle = "GALERI";
-      backgroundImage = "/img/rajut4.jpg";
+      backgroundImage = "/img/rajut4.JPG";
       break;
     default:
       pageTitle = "Halaman Tidak Dikenal";
-      backgroundImage = "/img/default-bg.jpg";
+      backgroundImage = "/img/default-bg.JPG";
       break;
   }
 
