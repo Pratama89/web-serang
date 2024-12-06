@@ -9,7 +9,7 @@ export default function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/laminating-hero.JPG" // Pastikan file berada di folder public
+        src="/img/coveringbenang.JPG" // Pastikan file berada di folder public
         alt="Hero Background"
         layout="fill"  // Menggunakan layout fill untuk gambar mengisi seluruh area
         objectFit="cover"  // Menjaga agar gambar mengisi area dengan proporsi yang benar
