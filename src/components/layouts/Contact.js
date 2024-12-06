@@ -3,7 +3,7 @@ import SectionHeaders from "./SectionHeader";
 export default function Contact() {
   return (
     <section className="text-center my-16 pt-24 px-4 sm:px-6 lg:px-8" id="contact">
-      <SectionHeaders subHeader="Kontak Kami" mainHeader="" />
+      <SectionHeaders subHeader="KONTAK KAMI" mainHeader="" />
       <div className="mt-16 lg:mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="rounded-lg overflow-hidden">

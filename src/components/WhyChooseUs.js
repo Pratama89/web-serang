@@ -37,12 +37,12 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-16 lg:px-16 px-2  bg-gray-100" id="why-choose-us">
+    <section className="py-16 lg:px-14 px-2  bg-gray-100" id="why-choose-us">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-red-600">MENGAPA MEMILIH KAMI?</h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:px-16 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:px-14 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map((feature, index) => (
           <div key={index} className="bg-white shadow-lg rounded-lg p-6 text-center">
             <div className="mb-4">
