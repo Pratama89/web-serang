@@ -43,7 +43,7 @@ export default function Header() {
             className="cursor-pointer py-2"
           />
           <span
-            className={`text-xl font-semibold ${
+            className={`lg:text-2xl text-sm font-semibold  ${
               color ? "text-gray-800" : "text-white"
             }`}>
             CV. MUTIARA ELASTICONDO
@@ -92,9 +92,10 @@ export default function Header() {
 
         {/* Mobile Menu */}
         <ul
-          className={`${
-            navbar ? "block" : "hidden"
-          } fixed top-0 left-0 w-full h-full bg-white p-8 space-y-6 text-center font-medium md:hidden`}>
+          className={`fixed top-0 right-0 w-3/4 h-full bg-white p-8 space-y-6 text-center font-medium md:hidden shadow-lg transform transition-transform ${
+            navbar ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
           {[
             { href: "/", label: "Home" },
             { href: "/products", label: "Produk" },
@@ -107,13 +108,16 @@ export default function Header() {
               key={menu.href}
               className={`transition hover:underline ${
                 pathname === menu.href ? "text-[#ff4b4b]" : "hover:text-[#800000]"
-              }`}>
+              }`}
+            >
               <Link href={menu.href} onClick={() => setNavbar(false)}>
                 {menu.label}
               </Link>
             </li>
           ))}
         </ul>
+        
+
       </div>
     </nav>
   );
