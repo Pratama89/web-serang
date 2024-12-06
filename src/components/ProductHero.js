@@ -19,7 +19,7 @@ export default function ProductHero() {
       break;
     case "/about":
       pageTitle = "TENTANG";
-      backgroundImage = "/img/rajut3.JPG";
+      backgroundImage = "/factory4.JPG";
       break;
     case "/divisi":
       pageTitle = "DIVISI";
@@ -31,6 +31,22 @@ export default function ProductHero() {
       break;
     case "/galeri":
       pageTitle = "GALERI";
+      backgroundImage = "/img/rajut4.JPG";
+      break;
+    case "/products/tali":
+      pageTitle = "TALI BRA";
+      backgroundImage = "/img/tali1.png";
+      break;
+    case "/products/karet":
+      pageTitle = "KARET BRA";
+      backgroundImage = "/img/karet1.png";
+      break;
+    case "/products/corong":
+      pageTitle = "CORONG BRA";
+      backgroundImage = "/img/corong1.png";
+      break;
+    case "/products/korset":
+      pageTitle = "KORSET";
       backgroundImage = "/img/rajut4.JPG";
       break;
     default:

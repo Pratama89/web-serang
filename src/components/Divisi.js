@@ -58,7 +58,7 @@ export default function Divisi() {
     <section id="devisi" className="bg-white  ">
       {/* Hero Section */}
       <ProductHero />
-      <div className="lg:container mx-auto px-6 md:px-12 mt-12 lg:px-20">
+      <div className="lg:container mx-auto  mt-12  ">
         {/* Header */}
         <h2
           className="text-4xl font-bold mb-8 text-center"
@@ -66,25 +66,25 @@ export default function Divisi() {
         >
           Divisi Produksi
         </h2>
-        <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+        <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12 ">
           Berikut adalah divisi produksi kami yang mendukung operasional perusahaan untuk menghasilkan produk berkualitas tinggi.
         </p>
 
         {/* Devisi List */}
-        <div className="space-y-12">
+        <div className="  mb-6 ">
           {devisiList.map((devisi, index) => (
             <div
               key={index}
-              className={`flex flex-col ${
+              className={`flex flex-col  ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } items-center gap-8`}
+              } items-center `}
             >
               {/* Gambar atau Video */}
               <div className="md:w-1/2">
                 {devisi.type === "video" ? (
                   <video
                     src={devisi.image}
-                    className="w-full h-64 object-cover rounded-lg shadow-lg"
+                    className="w-full h-64 object-cover  shadow-lg "
                     autoPlay
                     loop
                     muted
@@ -95,20 +95,20 @@ export default function Divisi() {
                     src={devisi.image}
                     alt={devisi.title}
                     width={800}
-                    height={600}
-                    className="w-full h-64 object-cover rounded-lg shadow-lg"
+                    height={700}
+                    className="w-full h-64 object-cover  shadow-lg "
                   />
                 )}
               </div>
               {/* Deskripsi */}
-              <div className="md:w-1/2 text-center md:text-left">
+              <div className="md:w-1/2 text-center  md:text-left">
                 <h3
-                  className="text-2xl font-semibold mb-4"
+                  className="text-2xl font-semibold mb-4 mx-6"
                   style={{ color: "#FF5733" }}
                 >
                   {devisi.title}
                 </h3>
-                <p className="text-gray-600 text-lg">{devisi.description}</p>
+                <p className="text-gray-600 text-lg mx-6">{devisi.description}</p>
               </div>
             </div>
           ))}

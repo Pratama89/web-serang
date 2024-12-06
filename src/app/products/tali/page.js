@@ -1,6 +1,7 @@
 // app/produk/korset/page.js
 import ProductPage from "@/components/ProductPage";
 import { otherProducts } from "@/data/products";
+import ProductHero from "@/components/ProductHero";
 
 export default function Tali() {
   const images = [
@@ -21,11 +22,16 @@ export default function Tali() {
   
 
   return (
-    <ProductPage
-      title="Tali"
-      images={images}
-      description={description}
-      otherProducts={otherProducts}
-    />
+    <section>
+      {/* Hero Section */}
+
+      <ProductHero />
+      <ProductPage
+        title="Tali"
+        images={images}
+        description={description}
+        otherProducts={otherProducts}
+      />
+    </section>
   );
 }

@@ -5,13 +5,14 @@ export default function Hero() {
   return (
     <section
       className="relative bg-white flex items-center justify-center h-[100vh] w-full overflow-hidden"
-      id="home">
+      id="home"
+    >
       {/* Background Image */}
       <Image
-        src="/laminating-hero.JPG"
+        src="/laminating-hero.JPG" // Pastikan file berada di folder public
         alt="Hero Background"
-        layout="fill"
-        objectFit="cover"
+        layout="fill"  // Menggunakan layout fill untuk gambar mengisi seluruh area
+        objectFit="cover"  // Menjaga agar gambar mengisi area dengan proporsi yang benar
         priority
         className="absolute z-0"
       />
@@ -20,14 +21,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black bg-opacity-10 z-10"></div>
 
       {/* Content */}
-      <div
-        className="relative z-20 text-center text-white px-6 max-w-4xl opacity-0 animate-fade-in"
-      >
+      <div className="relative z-20 text-center text-white px-6 max-w-4xl opacity-0 animate-fade-in">
         <h1 className="text-2xl md:text-5xl font-bold leading-snug animate-slide-in">
           <span className="text-primary">CV. Mutiara</span> Elasticindo
         </h1>
         <p className="mt-4 text-sm md:text-lg">
-        Kami menghadirkan solusi tekstil elastis terbaik untuk mendukung berbagai industri. Dengan teknologi modern dan standar kualitas tinggi, kami siap memenuhi kebutuhan Anda.
+          Kami menghadirkan solusi tekstil elastis terbaik untuk mendukung berbagai industri. Dengan teknologi modern dan standar kualitas tinggi, kami siap memenuhi kebutuhan Anda.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           {/* Tombol Layanan */}

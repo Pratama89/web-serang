@@ -1,6 +1,8 @@
 // app/produk/korset/page.js
 import ProductPage from "@/components/ProductPage";
 import { otherProducts } from "@/data/products";
+import { section } from "framer-motion/client";
+import ProductHero from "@/components/ProductHero";
 
 export default function Korset() {
   const images = [
@@ -16,11 +18,16 @@ export default function Korset() {
   
 
   return (
-    <ProductPage
-      title="Korset"
-      images={images}
-      description={description}
-      otherProducts={otherProducts}
-    />
+    <section>
+      <ProductHero />
+
+      <ProductPage
+        title="Korset"
+        images={images}
+        description={description}
+        otherProducts={otherProducts}
+      />
+
+    </section>
   );
 }

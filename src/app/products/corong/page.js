@@ -1,5 +1,6 @@
 import ProductPage from "@/components/ProductPage";
 import { otherProducts } from "@/data/products";
+import ProductHero from "@/components/ProductHero";
 
 export default function CorongPage() {
   const images = [
@@ -19,11 +20,14 @@ export default function CorongPage() {
   
 
   return (
-    <ProductPage
-      title="Corong"
-      images={images}
-      description={description}
-      otherProducts={otherProducts}
-    />
+    <section>
+      <ProductHero />
+      <ProductPage
+        title="Corong"
+        images={images}
+        description={description}
+        otherProducts={otherProducts}
+      />
+    </section>
   );
 }
