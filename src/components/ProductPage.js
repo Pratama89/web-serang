@@ -28,7 +28,7 @@ export default function ProductPage({
   };
 
   return (
-    <div className="container mx-auto p-6 my-16 flex flex-wrap lg:flex-nowrap gap-6">
+    <div className="mx-auto p-4 my-16 flex flex-wrap lg:flex-nowrap gap-6">
       {/* Sidebar */}
       <Sidebar products={otherProducts} />
 
@@ -37,7 +37,7 @@ export default function ProductPage({
         <h1 className="text-4xl font-semibold text-center mb-6">{title}</h1>
 
         {/* Grid Layout for Images */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
           {images.map((image, index) => (
             <ImageCard
               key={index}
@@ -69,8 +69,7 @@ export default function ProductPage({
 const ImageCard = ({ image, onClick }) => (
   <div
     className="rounded-lg shadow-lg overflow-hidden cursor-pointer"
-    onClick={onClick}
-  >
+    onClick={onClick}>
     <Image
       src={image.src}
       alt={image.alt}

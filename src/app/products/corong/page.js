@@ -4,14 +4,18 @@ import ProductHero from "@/components/ProductHero";
 
 export default function CorongPage() {
   const images = [
-    { src: "/img/corong/corong1.jpeg", alt: "Corong Model 1" },
-    { src: "/img/corong/corong2.jpeg", alt: "Corong Model 2" },
-    { src: "/img/corong/corong3.jpeg", alt: "Corong Model 3" },
-    { src: "/img/corong/corong4.jpeg", alt: "Corong Model 4" },
-    { src: "/img/corong/corong5.jpeg", alt: "Corong Model 5" },
-    { src: "/img/corong/corong6.jpeg", alt: "Corong Model 6" },
-    { src: "/img/corong/corong7.jpeg", alt: "Corong Model 7" },
-    { src: "/img/corong/corong8.jpeg", alt: "Corong Model 8" },
+    { src: "/img/corong/corong (1).jpg", alt: "Corong Model 1" },
+    { src: "/img/corong/corong (2).jpg", alt: "Corong Model 2" },
+    { src: "/img/corong/corong (3).jpg", alt: "Corong Model 3" },
+    { src: "/img/corong/corong (4).jpg", alt: "Corong Model 4" },
+    { src: "/img/corong/corong (5).jpg", alt: "Corong Model 5" },
+    { src: "/img/corong/corong (6).jpg", alt: "Corong Model 6" },
+    { src: "/img/corong/corong (7).jpg", alt: "Corong Model 7" },
+    { src: "/img/corong/corong (8).jpg", alt: "Corong Model 8" },
+    { src: "/img/corong/corong (9).jpg", alt: "Corong Model 8" },
+    { src: "/img/corong/corong (10).jpg", alt: "Corong Model 8" },
+    { src: "/img/corong/corong (11).jpg", alt: "Corong Model 8" },
+    { src: "/img/corong/corong (12).jpg", alt: "Corong Model 8" },
   ];
 
   const description =

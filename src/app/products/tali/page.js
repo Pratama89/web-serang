@@ -5,15 +5,26 @@ import ProductHero from "@/components/ProductHero";
 
 export default function Tali() {
   const images = [
-    { src: "/img/tali/tali1.jpeg", alt: "Tali Model 1" },
-    { src: "/img/tali/tali2.jpeg", alt: "Tali Model 1" },
-    { src: "/img/tali/tali3.jpeg", alt: "Tali Model 1" },
-    { src: "/img/tali/tali4.jpeg", alt: "Tali Model 1" },
-    { src: "/img/tali/tali5.jpeg", alt: "Tali Model 1" },
-    { src: "/img/tali/tali6.jpeg", alt: "Tali Model 1" },
-    { src: "/img/tali/tali7.jpeg", alt: "Tali Model 1" },
-    { src: "/img/tali/tali8.jpeg", alt: "Tali Model 1" },
-    { src: "/img/tali/tali9.jpeg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (1).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (2).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (3).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (4).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (5).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (6).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (7).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (8).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (9).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (10).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (11).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (12).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (13).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (14).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (15).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (16).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (17).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (18).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (19).jpg", alt: "Tali Model 1" },
+    { src: "/img/tali/tali (20).jpg", alt: "Tali Model 1" },
   ];
 
   const description =
