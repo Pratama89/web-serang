@@ -93,9 +93,9 @@ export default function HomeMenu() {
 
       {/* Tombol Lihat Semua Devisi */}
       <div className="text-center mt-8">
-        <Link href="/devisi">
+        <Link href="/divisi">
           <button className="bg-red-500 text-white py-3 px-6 rounded-lg font-semibold shadow-lg hover:bg-red-600 transition mb-16">
-            Lihat Semua Devisi
+            Lihat Semua Divisi
           </button>
         </Link>
       </div>

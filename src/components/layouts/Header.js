@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // Import usePathname
@@ -9,6 +9,7 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
   const [color, setColor] = useState(false);
   const pathname = usePathname(); // Mendapatkan path saat ini
+  const menuRef = useRef(null); // Referensi untuk menu mobile
 
   // Fungsi untuk mengubah warna navbar saat di scroll
   const changeColor = () => {
@@ -19,18 +20,39 @@ export default function Header() {
     }
   };
 
+  // Fungsi untuk mendeteksi klik di luar menu
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setNavbar(false); // Menutup menu jika klik di luar elemen menu
+    }
+  };
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", changeColor);
-      return () => window.removeEventListener("scroll", changeColor);
+      document.addEventListener("mousedown", handleClickOutside);
+
+      // Menambah atau menghapus class `overflow-hidden` pada body
+      if (navbar) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+
+      return () => {
+        window.removeEventListener("scroll", changeColor);
+        document.removeEventListener("mousedown", handleClickOutside);
+        document.body.classList.remove("overflow-hidden");
+      };
     }
-  }, []);
+  }, [navbar]);
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
         color ? "bg-white text-gray-800 shadow-md" : "bg-transparent text-white"
-      }`}>
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center ">
         {/* Logo dengan Teks */}
         <Link href={"/"} className="flex items-center space-x-2 ">
@@ -45,7 +67,8 @@ export default function Header() {
           <span
             className={`lg:text-2xl text-sm font-semibold  ${
               color ? "text-gray-800" : "text-white"
-            }`}>
+            }`}
+          >
             CV. MUTIARA ELASTICONDO
           </span>
         </Link>
@@ -66,12 +89,14 @@ export default function Header() {
                 pathname === menu.href
                   ? "bg-[#ff4b4b] text-white"
                   : "hover:bg-[#ff4b4b] hover:text-white"
-              }`}>
+              }`}
+            >
               <Link
                 href={menu.href}
                 className={`block py-2 px-6 ${
                   color && pathname !== menu.href ? "text-gray-800" : "text-white"
-                }`}>
+                }`}
+              >
                 {menu.label}
               </Link>
             </li>
@@ -81,7 +106,8 @@ export default function Header() {
         {/* Hamburger Menu (Mobile) */}
         <button
           onClick={() => setNavbar(!navbar)}
-          className="md:hidden p-2 rounded-md bg-gray-200">
+          className="md:hidden p-2 rounded-md bg-gray-200"
+        >
           <Image
             src={navbar ? "/close.svg" : "/hamburger-menu.svg"}
             alt="Menu"
@@ -92,9 +118,10 @@ export default function Header() {
 
         {/* Mobile Menu */}
         <ul
-          className={`fixed top-0 right-0 w-3/4 h-full bg-white p-8 space-y-6 text-center font-medium md:hidden shadow-lg transform transition-transform ${
+          ref={menuRef} // Tambahkan referensi untuk menu
+          className={`fixed top-0 right-0 w-3/4 h-full bg-white p-8 space-y-6 text-center font-medium md:hidden shadow-lg z-40 ${
             navbar ? "translate-x-0" : "translate-x-full"
-          }`}
+          } transition-transform duration-300 ease-in-out`}
         >
           {[
             { href: "/", label: "Home" },
@@ -116,8 +143,6 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        
-
       </div>
     </nav>
   );
