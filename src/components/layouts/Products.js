@@ -62,7 +62,7 @@ export default function Products() {
               className="bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 hover:shadow-xl"
             >
               {/* Media: Gambar atau Video */}
-              <div className="relative w-full h-64">
+              <div className="relative w-full h-96">
                 {product.type === "video" ? (
                   <video
                     src={product.media}
