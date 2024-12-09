@@ -26,10 +26,10 @@ export default function About() {
   return (
 
     
-    <section id="about" className="bg-white  justify-center">
+    <section id="about" className="bg-white  justify-center mb-6">
       {/* Hero Section */}
       <ProductHero />
-      <div className="lg:container mx-auto px-6 mt-16 md:px-12 lg:px-20">
+      <div className=" mx-auto px-6 mt-16 md:px-12 lg:px-20">
         <h2
           className="text-4xl font-bold text-gray-800 mb-8 text-center"
           style={{ color: "#FF5733" }}
@@ -38,7 +38,7 @@ export default function About() {
         </h2>
 
         {/* Carousel Gambar */}
-        <div className="rounded-lg shadow-lg w-full max-w-4xl mx-auto">
+        <div className="rounded-lg shadow-lg w-full max-w-full h-full py-2 mx-auto">
           <Swiper
             spaceBetween={20}
             slidesPerView={1}

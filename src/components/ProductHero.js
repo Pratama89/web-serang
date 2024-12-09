@@ -27,7 +27,7 @@ export default function ProductHero() {
       break;
     case "/kontak":
       pageTitle = "KONTAK";
-      backgroundImage = "/img/rajut1.JPG";
+      backgroundImage = "/img/rajut5.JPG";
       break;
     case "/galeri":
       pageTitle = "GALERI";

@@ -36,8 +36,8 @@ export default function Products() {
       name: "Kami Memproduksi Korset",
       description:
         "Kami memproduksi korset dengan desain yang elegan dan fungsional, menggunakan bahan berkualitas tinggi untuk memberikan dukungan maksimal dan kenyamanan sepanjang hari. Korset kami dirancang untuk membentuk tubuh dengan sempurna, memberikan tampilan yang lebih ramping dan menawan. Tersedia dalam berbagai ukuran dan model, korset kami cocok untuk berbagai kebutuhan, baik untuk pakaian sehari-hari maupun acara khusus.",
-      media: "/img/rajut4.JPG",
-      type: "image",
+      media: "/img/korset/korset.mp4",
+      type: "video",
       link: "/products/korset",
     },
   ];
@@ -48,7 +48,7 @@ export default function Products() {
       <ProductHero />
 
       {/* Produk Kami Section */}
-      <section id="products" className="py-12 bg-white max-w-full mx-auto">
+      <section id="products" className="py-12 px-2 bg-white max-w-full mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-semibold text-red-500">Produk Kami</h2>
           <p className="mt-2 text-lg text-gray-600">

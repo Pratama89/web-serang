@@ -1,15 +1,14 @@
 // app/produk/korset/page.js
 import ProductPage from "@/components/ProductPage";
 import { otherProducts } from "@/data/products";
-import { section } from "framer-motion/client";
 import ProductHero from "@/components/ProductHero";
 
 export default function Korset() {
   const images = [
-    { src: "/img/rajut1.JPG", alt: "Korset Model 1" },
-    { src: "/img/rajut2.JPG", alt: "Korset Model 2" },
-    { src: "/img/rajut3.JPG", alt: "Korset Model 3" },
-    { src: "/img/rajut4.JPG", alt: "Korset Model 4" },
+    { src: "/img/korset/korset (1).jpg", alt: "Korset Model 1" },
+    { src: "/img/korset/korset (5).jpg", alt: "Korset Model 2" },
+    { src: "/img/korset/korset (3).jpg", alt: "Korset Model 3" },
+    { src: "/img/korset/korset (4).jpg", alt: "Korset Model 4" },
   ];
 
   const description =

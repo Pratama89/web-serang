@@ -10,8 +10,7 @@ export const metadata = {
 
 export default function ProductsPage() {
   return (
-    <section className="bg-white  border border-red-600">
-      
+    <section className="bg-white">      
       <div className="mx-auto ">
         <Products />
       </div>

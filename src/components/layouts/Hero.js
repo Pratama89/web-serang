@@ -30,13 +30,13 @@ export default function Hero() {
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           {/* Tombol Layanan */}
-          <Link href="https://wa.link/h7ywr2" target="_blank">
+          <Link href="/products" target="_blank">
             <button className="bg-primary text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-red-700 transition">
               Jelajahi Produk Kami
             </button>
           </Link>
           {/* Tombol Kontak */}
-          <Link href="https://wa.link/h7ywr2" target="_blank">
+          <Link href="/kontak" target="_blank">
             <button className="bg-white text-black font-medium px-6 py-3 rounded-full shadow-md hover:bg-gray-200 transition">
               Hubungi Kami untuk Penawaran
             </button>
