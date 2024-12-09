@@ -45,7 +45,8 @@ export default function Header() {
         document.body.classList.remove("overflow-hidden");
       };
     }
-  }, [navbar]);
+  }, [navbar]);  
+  
 
   return (
     <nav
@@ -118,10 +119,14 @@ export default function Header() {
 
         {/* Mobile Menu */}
         <ul
-          ref={menuRef} // Tambahkan referensi untuk menu
+          ref={menuRef}
           className={`fixed top-0 right-0 w-3/4 h-full bg-white p-8 space-y-6 text-center font-medium md:hidden shadow-lg z-40 ${
             navbar ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out`}
+          } transition-transform duration-300 ease-in-out overflow-y-auto`}
+          style={{
+            maxHeight: "100vh", // Membatasi tinggi maksimum menu ke tinggi layar
+            color: "black", // Warna teks yang terlihat
+          }}
         >
           {[
             { href: "/", label: "Home" },
@@ -143,6 +148,8 @@ export default function Header() {
             </li>
           ))}
         </ul>
+
+
       </div>
     </nav>
   );
