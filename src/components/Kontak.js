@@ -35,7 +35,7 @@ export default function Kontak() {
               Klik tombol di bawah untuk menghubungi kami via WhatsApp
             </p>
             <a
-              href="https://wa.me/6281368939180"
+              href="https://wa.me/6289673791935"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-green-600 transition">

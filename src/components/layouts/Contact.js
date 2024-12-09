@@ -32,17 +32,17 @@ export default function Contact() {
                 <p className="mt-1 text-gray-600">Minggu: Tutup</p>
               </div>
               <div className="border-t border-gray-200 px-4 sm:px-6 py-4">
-                <h3 className="text-lg font-medium text-gray-900">Kontak</h3>
+                <h3 className="text-lg font-medium text-gray-900">Kontak Pemasaran</h3>
                 <p className="mt-1 text-gray-600">Email: admin@mutiara-elasticindo.co.id</p>
                 <p className="mt-1 text-gray-600">
                   WhatsApp:{" "}
                   <a
-                    href="https://wa.me/6281368939180"
+                    href="https://wa.me/6289673791935"
                     className="text-blue-500 hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    +62 813-6893-9180
+                    +62 896-7379-1935
                   </a>
                 </p>
               </div>
