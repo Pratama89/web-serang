@@ -9,6 +9,7 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Perbaikan from '@/components/layouts/Perbaikan';
 import { motion } from 'framer-motion';
 import Loader from '@/components/Loader'; // Import Loader
+import Products from '@/components/layouts/Products';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -43,15 +44,10 @@ export default function Home() {
         <Hero />
       </motion.div>
 
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInUp}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+      
         <About />
-      </motion.div>
-
+      
+      {/* <Products /> */}
       <motion.div
         initial="hidden"
         animate="visible"

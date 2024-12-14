@@ -15,16 +15,19 @@ export default function About() {
             <SectionHeaders subHeader="TENTANG KAMI" mainHeader="" />
           </div>
 
-          <div className="flex flex-col lg:flex-row w-full  bg-white lg:container md:container  mx-auto rounded-lg shadow-md overflow-hidden">
+          <div className="flex flex-col lg:flex-row w-full  bg-white   mx-auto rounded-lg shadow-md overflow-hidden">
             {/* Parallax Gambar di Sebelah Kiri */}
-            <Parallax y={[-20, 20]} tagOuter="div" className="relative w-full lg:w-1/2">
-              <div className="h-[200px] lg:h-[500px] lg:ml-0 ml-auto">
+            <Parallax
+              y={[-20, 20]} // Efek paralaks vertikal
+              className="relative w-full lg:w-1/2 h-[300px] lg:h-[500px] overflow-hidden"
+            >
+              <div className="relative h-full">
                 <Image
                   src="/factory4.JPG"
                   alt="Gambar"
                   fill
                   sizes="(max-width: 768px) 100vw, (min-width: 1024px) 50vw"
-                  className="object-cover rounded-lg"
+                  className="object-cover"
                 />
               </div>
             </Parallax>
@@ -37,19 +40,18 @@ export default function About() {
               </h2>
               <p className="text-gray-600 text-base text-left lg:text-lg leading-relaxed mb-6">
                 Berdiri Tahun: 2015 <br />
-                Bidang Usaha: Perusahaan yang bergerak di bidang manufaktur tekstil
-                <br />
-                CV. Mutiara Elasticindo didirikan pada tahun 2015 di kawasan industri
-                Serang, Banten. 
+                Bidang Usaha: Perusahaan yang bergerak di bidang manufaktur
+                tekstil di kawasan industri Serang, Banten.
                 <br />
                 <br />
-                Berawal dari visi untuk menyediakan produk tekstil
-                berkualitas tinggi bagi industri pakaian dalam, perusahaan ini terus
-                berkembang dengan mengedepankan teknologi modern dan inovasi.
+                Berawal dari visi untuk menyediakan produk tekstil berkualitas
+                bagi industri pakaian dalam bra dan underware. Perusahaan kami
+                terus berkembang dengan mengedepankan teknologi modern, inovasi
+                dan inovatif.
                 <br />
                 <br />
-                Dengan pengalaman hampir satu dekade, kami telah menjadi mitra
-                terpercaya bagi banyak pelaku usaha di beberapa daerah Indonesia.
+                Kami telah menjadi mitra terpercaya bagi banyak pelaku usaha di
+                beberapa daerah Indonesia.
               </p>
               <Link href="/about">
                 <button className="bg-primary text-white px-4 py-3 rounded-full shadow-md hover:bg-red-700 transition">

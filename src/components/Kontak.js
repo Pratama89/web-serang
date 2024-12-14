@@ -60,10 +60,18 @@ export default function Kontak() {
           {/* Alamat */}
           <div className="flex flex-col items-center text-center bg-gray-100 p-6 rounded-lg shadow-md w-full md:w-1/3">
             <FaMapMarkerAlt className="text-red-500 text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Alamat</h3>
+            <h3 className="text-xl font-semibold mb-2">Alamat Pabrik</h3>
             <p className="text-gray-600">
               Jl. Keserangan - Pengampelan No. 88, Kp. Nambo RT 06 / 03, Ds.
               Keserangan, Kec. Ciruas - Kab. Serang, Banten, Indonesia
+            </p>
+          </div>
+          {/* Alamat */}
+          <div className="flex flex-col items-center text-center bg-gray-100 p-6 rounded-lg shadow-md w-full md:w-1/3">
+            <FaMapMarkerAlt className="text-red-500 text-5xl mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Kantor Pemasaran dan Pemesanan</h3>
+            <p className="text-gray-600">
+              Jl. BTN No. 5, Komp. Bangun Reksa Indah Blok W No.5, Karangtengah, Tangerang, Banten, Indonesia
             </p>
           </div>
         </div>

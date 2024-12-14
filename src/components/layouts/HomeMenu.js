@@ -61,7 +61,7 @@ export default function HomeMenu() {
             className="flex flex-col items-center"
           >
             {/* Media (Gambar atau Video) */}
-            <div className="relative w-full h-56 shadow-lg overflow-hidden">
+            <div className="relative w-full h-[300px] shadow-lg overflow-hidden">
               {service.type === "video" ? (
                 <video
                   src={service.image}

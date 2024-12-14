@@ -19,10 +19,16 @@ export default function Contact() {
           <div>
             <div className="max-w-full mx-auto rounded-lg overflow-hidden">
               <div className="px-4 sm:px-6 py-4">
-                <h3 className="text-lg font-medium text-gray-900">Detail Alamat</h3>
+                <h3 className="text-lg font-medium text-gray-900">Alamat Pabrik</h3>
                 <p className="mt-1 text-gray-600">
                   Jl. Keserangan - Pengampelan No. 88, Kp. Nambo RT 06 / 03, Ds.
                   Keserangan, Kec. Ciruas - Kab. Serang, Banten, Indonesia
+                </p>
+              </div>
+              <div className="px-4 sm:px-6 py-4">
+                <h3 className="text-lg font-medium text-gray-900">Alamat Kantor Pemasaran</h3>
+                <p className="mt-1 text-gray-600">
+                  Jl. BTN No. 5, Komp. Bangun Reksa Indah Blok W No.5, Karangtengah, Tangerang, Banten, Indonesia
                 </p>
               </div>
               <div className="border-t border-gray-200 px-4 sm:px-6 py-4">
@@ -33,7 +39,7 @@ export default function Contact() {
               </div>
               <div className="border-t border-gray-200 px-4 sm:px-6 py-4">
                 <h3 className="text-lg font-medium text-gray-900">Kontak Pemasaran</h3>
-                <p className="mt-1 text-gray-600">Email: admin@mutiara-elasticindo.co.id</p>
+                <p className="mt-1 text-gray-600">Email: mutiaratextile31@gmail.com</p>
                 <p className="mt-1 text-gray-600">
                   WhatsApp:{" "}
                   <a
