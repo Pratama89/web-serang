@@ -10,12 +10,12 @@ export default function About() {
   return (
     <ParallaxProvider>
       <div className="pt-20" id="about">
-        <section className=" text-center my-5 mx-4">
+        <section className="lg:container mx-auto text-center my-5 ">
           <div className="rounded-lg p-4">
             <SectionHeaders subHeader="TENTANG KAMI" mainHeader="" />
           </div>
 
-          <div className="flex flex-col lg:flex-row w-full  bg-white   mx-auto rounded-lg shadow-md overflow-hidden">
+          <div className="flex flex-col lg:flex-row w-full p-4 bg-white   mx-auto rounded-lg shadow-md overflow-hidden">
             {/* Parallax Gambar di Sebelah Kiri */}
             <Parallax
               y={[-20, 20]} // Efek paralaks vertikal

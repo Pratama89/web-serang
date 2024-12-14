@@ -70,7 +70,7 @@ export default function Header() {
               color ? "text-gray-800" : "text-white"
             }`}
           >
-            CV. MUTIARA ELASTICONDO
+            CV. MUTIARA ELASTICINDO
           </span>
         </Link>
 
@@ -78,7 +78,6 @@ export default function Header() {
         <ul className="hidden md:flex gap-4 items-center justify-center font-medium">
           {[
             { href: "/", label: "Home" },
-            { href: "/products", label: "Produk" },
             { href: "/about", label: "Tentang" },
             { href: "/divisi", label: "Divisi" },
             { href: "/kontak", label: "Kontak" },
@@ -130,7 +129,6 @@ export default function Header() {
         >
           {[
             { href: "/", label: "Home" },
-            { href: "/products", label: "Produk" },
             { href: "/about", label: "Tentang" },
             { href: "/divisi", label: "Divisi" },
             { href: "/kontak", label: "Kontak" },

@@ -146,4 +146,20 @@ button[type="submit"]:disabled,
   background-color: rgba(0, 0, 0, 0.1); /* Lebih terang saat di-hover */
 }
 
+/* Efek Parallax */
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-attachment: scroll; /* Agar gambar ikut bergerak */
+  background-size: cover;
+  background-position: center;
+  transition: background-position 0.2s linear; /* Animasi halus */
+}
 
+/* Efek Paralaks Aktif saat Scroll */
+html {
+  scroll-behavior: smooth; /* Opsional: agar halaman bergulir halus */
+}

@@ -9,7 +9,7 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Perbaikan from '@/components/layouts/Perbaikan';
 import { motion } from 'framer-motion';
 import Loader from '@/components/Loader'; // Import Loader
-import Products from '@/components/layouts/Products';
+import Produk from '@/components/Produk';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,17 +45,26 @@ export default function Home() {
       </motion.div>
 
       
-        <About />
+        <About />     
       
-      {/* <Products /> */}
-      <motion.div
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <Produk />
+        </motion.div>
+
+      {/* <motion.div
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <HomeMenu />
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         initial="hidden"
