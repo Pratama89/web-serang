@@ -84,7 +84,7 @@ export default function Divisi() {
                 {devisi.type === "video" ? (
                   <video
                     src={devisi.image}
-                    className="w-full h-64 object-cover  shadow-lg "
+                    className="w-full h-92 object-cover  shadow-lg "
                     autoPlay
                     loop
                     muted
@@ -96,7 +96,7 @@ export default function Divisi() {
                     alt={devisi.title}
                     width={800}
                     height={700}
-                    className="w-full h-64 object-cover  shadow-lg "
+                    className="w-full h-92 object-cover  shadow-lg "
                   />
                 )}
               </div>

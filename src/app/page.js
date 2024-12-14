@@ -4,95 +4,55 @@ import { useState, useEffect } from 'react';
 import About from '@/components/layouts/About';
 import Contact from '@/components/layouts/Contact';
 import Hero from '@/components/layouts/Hero';
-import HomeMenu from '@/components/layouts/HomeMenu';
 import WhyChooseUs from '@/components/WhyChooseUs';
-import Perbaikan from '@/components/layouts/Perbaikan';
-import { motion } from 'framer-motion';
-import Loader from '@/components/Loader'; // Import Loader
 import Produk from '@/components/Produk';
+import CountUp from '@/components/CountUp';
+import Loader from '@/components/Loader'; // Loader
+import ScrollFadeUp from '@/components/ScrollFadeUp'; // HOC Scroll Animasi
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulasi waktu loading selama 2 detik
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // Ubah waktu jika perlu
-
+    const timer = setTimeout(() => setIsLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
-  // Jika masih loading, tampilkan Loader
   if (isLoading) {
     return <Loader />;
   }
 
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
     <div>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInUp}
-        transition={{ duration: 0.6, delay: 0 }}
-      >
+      {/* Hero Section */}
+      <ScrollFadeUp>
         <Hero />
-      </motion.div>
+      </ScrollFadeUp>
 
-      
-        <About />     
-      
+      {/* About Section */}
+      <ScrollFadeUp>
+        <About />
+      </ScrollFadeUp>
 
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <Produk />
-        </motion.div>
+      {/* Produk Section */}
+      <ScrollFadeUp>
+        <Produk />
+      </ScrollFadeUp>
 
-      {/* <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInUp}
-        transition={{ duration: 0.6, delay: 0.4 }}
-      >
-        <HomeMenu />
-      </motion.div> */}
-
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInUp}
-        transition={{ duration: 0.6, delay: 0.6 }}
-      >
+      {/* Why Choose Us Section */}
+      <ScrollFadeUp>
         <WhyChooseUs />
-      </motion.div>
+      </ScrollFadeUp>
 
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInUp}
-        transition={{ duration: 0.6, delay: 0.8 }}
-      >
+      {/* Count Up Section */}
+      {/* <ScrollFadeUp>
+        <CountUp />
+      </ScrollFadeUp> */}
+
+      {/* Contact Section */}
+      <ScrollFadeUp>
         <Contact />
-      </motion.div>
-
-      {/* Uncomment jika diperlukan */}
-      {/* <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInUp}
-        transition={{ duration: 0.6, delay: 1 }}
-      >
-        <Perbaikan />
-      </motion.div> */}
+      </ScrollFadeUp>
     </div>
   );
 }
