@@ -81,7 +81,7 @@ export default function Header() {
             { href: "/about", label: "Tentang" },
             { href: "/divisi", label: "Divisi" },
             { href: "/kontak", label: "Kontak" },
-            { href: "/galeri", label: "Galeri" },
+            // { href: "/galeri", label: "Galeri" },
           ].map((menu) => (
             <li
               key={menu.href}
@@ -132,7 +132,7 @@ export default function Header() {
             { href: "/about", label: "Tentang" },
             { href: "/divisi", label: "Divisi" },
             { href: "/kontak", label: "Kontak" },
-            { href: "/galeri", label: "Galeri" },
+            // { href: "/galeri", label: "Galeri" },
           ].map((menu) => (
             <li
               key={menu.href}
