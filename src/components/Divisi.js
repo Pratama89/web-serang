@@ -67,7 +67,8 @@ export default function Divisi() {
           Divisi Produksi
         </h2>
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12 ">
-          Berikut adalah divisi produksi kami yang mendukung operasional perusahaan untuk menghasilkan produk berkualitas tinggi.
+          Berikut adalah divisi produksi kami yang mendukung operasional
+          perusahaan untuk menghasilkan produk berkualitas tinggi.
         </p>
 
         {/* Devisi List */}
@@ -77,8 +78,7 @@ export default function Divisi() {
               key={index}
               className={`flex flex-col  ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } items-center `}
-            >
+              } items-center `}>
               {/* Gambar atau Video */}
               <div className="md:w-1/2">
                 {devisi.type === "video" ? (
@@ -88,8 +88,7 @@ export default function Divisi() {
                     autoPlay
                     loop
                     muted
-                    playsInline
-                  ></video>
+                    playsInline></video>
                 ) : (
                   <Image
                     src={devisi.image}
@@ -104,11 +103,12 @@ export default function Divisi() {
               <div className="md:w-1/2 text-center  md:text-left">
                 <h3
                   className="text-2xl font-semibold mb-4 mx-6"
-                  style={{ color: "#FF5733" }}
-                >
+                  style={{ color: "#FF5733" }}>
                   {devisi.title}
                 </h3>
-                <p className="text-gray-600 text-lg mx-6">{devisi.description}</p>
+                <p className="text-gray-600 text-lg mx-6">
+                  {devisi.description}
+                </p>
               </div>
             </div>
           ))}

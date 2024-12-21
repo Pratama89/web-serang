@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
     {
       title: "PRODUK BERKUALITAS",
       description:
-        "Kami memprioritaskan kualitas dalam pembuatan Tali Bra, Karet Bra, dan Corong Bra, dengan menggunakan material terbaik untuk memastikan kenyamanan dan ketahanan produk.",
+        "Kami memprioritaskan kualitas dalam pembuatan Tali Bra, Karet Bra, dan Corong, dengan menggunakan material terbaik untuk memastikan kenyamanan dan ketahanan produk.",
       icon: <FaTags className="text-4xl text-green-500" />,
     },
     {
@@ -22,24 +22,24 @@ export default function WhyChooseUs() {
         "Kami bangga dapat menyediakan produk dengan kualitas luar biasa dan harga yang kompetitif, memberikan solusi terbaik untuk kebutuhan bisnis Anda.",
       icon: <FaTags className="text-4xl text-yellow-500" />,
     },
-    {
-      title: "FOKUS PASAR LOKAL",
-      description:
-        "Kami dapat memenuhi permintaan Tali Bra, Karet Bra, dan Corong BH untuk pasar lokal, dengan kemampuan untuk mendukung merek-merek lokal seperti Winalin dan Pokabee.",
-      icon: <FaGlobe className="text-4xl text-red-500" />,
-    },
+    // {
+    //   title: "FOKUS PASAR LOKAL",
+    //   description:
+    //     "Kami dapat memenuhi permintaan Tali Bra, Karet Bra, dan Corong untuk pasar lokal, dengan kemampuan untuk mendukung merek-merek lokal.",
+    //   icon: <FaGlobe className="text-4xl text-red-500" />,
+    // },
     {
       title: "LAYANAN",
       description:
         "Layanan yang ramah, responsif, dan profesional menjadi prioritas kami dalam setiap interaksi dengan klien, untuk memastikan pengalaman yang memuaskan.",
       icon: <FaHandshake className="text-4xl text-purple-500" />,
     },
-    {
-      title: "MEREK TERKENAL",
-      description:
-        "Kami telah menjadi pemasok untuk merek-merek terkenal di beberapa merek seperti Winalin dan Pokabee, menawarkan produk yang mendukung kenyamanan dan kualitas pakaian dalam.",
-      icon: <FaTrademark className="text-4xl text-orange-500" />,
-    },
+    // {
+    //   title: "MEREK TERKENAL",
+    //   description:
+    //     "Kami telah menjadi pemasok untuk merek-merek terkenal di beberapa merek lokal, menawarkan produk yang mendukung kenyamanan dan kualitas pakaian dalam.",
+    //   icon: <FaTrademark className="text-4xl text-orange-500" />,
+    // },
   ];
 
   return (
@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
         <h2 className="text-3xl font-bold text-red-600">MENGAPA MEMILIH KAMI?</h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:px-14 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:px-14 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {features.map((feature, index) => (
           <div
             key={index}

@@ -35,7 +35,7 @@ export default function Products() {
     {
       id: 5,
       name: "Tali Custom",
-      media: "/img/korset (8).jpg",
+      media: "/img/produk (4).JPG",
       type: "image",
       link: "/products/korset",
     },

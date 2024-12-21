@@ -20,7 +20,7 @@ export default function Kontak() {
           Hubungi Kami
         </h2>
         <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-          CV. Mutiara Elasticindo adalah Produsen Karet BRA, Tali BRA, Corong BRA,
+          CV. Mutiara Elasticindo adalah Produsen Karet Bra, Tali Bra, Corong,
           dan Korset. Untuk pertanyaan atau konsultasi bisnis, silakan hubungi
           kami melalui informasi kontak di bawah ini.
         </p>
@@ -60,7 +60,7 @@ export default function Kontak() {
           {/* Alamat */}
           <div className="flex flex-col items-center text-center bg-gray-100 p-6 rounded-lg shadow-md w-full md:w-1/3">
             <FaMapMarkerAlt className="text-red-500 text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Alamat Pabrik</h3>
+            <h3 className="text-xl font-semibold mb-2">Factory</h3>
             <p className="text-gray-600">
               Jl. Keserangan - Pengampelan No. 88, Kp. Nambo RT 06 / 03, Ds.
               Keserangan, Kec. Ciruas - Kab. Serang, Banten, Indonesia
@@ -69,7 +69,7 @@ export default function Kontak() {
           {/* Alamat */}
           <div className="flex flex-col items-center text-center bg-gray-100 p-6 rounded-lg shadow-md w-full md:w-1/3">
             <FaMapMarkerAlt className="text-red-500 text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Kantor Pemasaran dan Pemesanan</h3>
+            <h3 className="text-xl font-semibold mb-2">Marketing Office</h3>
             <p className="text-gray-600">
               Jl. BTN No. 5, Komp. Bangun Reksa Indah Blok W No.5, Karangtengah, Tangerang, Banten, Indonesia
             </p>

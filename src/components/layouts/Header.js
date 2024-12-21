@@ -79,9 +79,9 @@ export default function Header() {
           {[
             { href: "/", label: "Home" },
             { href: "/about", label: "Tentang" },
-            { href: "/divisi", label: "Divisi" },
+            // { href: "/divisi", label: "Divisi" },
+            { href: "/galeri", label: "Galeri" },
             { href: "/kontak", label: "Kontak" },
-            // { href: "/galeri", label: "Galeri" },
           ].map((menu) => (
             <li
               key={menu.href}
@@ -130,9 +130,9 @@ export default function Header() {
           {[
             { href: "/", label: "Home" },
             { href: "/about", label: "Tentang" },
-            { href: "/divisi", label: "Divisi" },
+            // { href: "/divisi", label: "Divisi" },
+            { href: "/galeri", label: "Galeri" },
             { href: "/kontak", label: "Kontak" },
-            // { href: "/galeri", label: "Galeri" },
           ].map((menu) => (
             <li
               key={menu.href}

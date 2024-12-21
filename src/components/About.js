@@ -133,7 +133,7 @@ export default function About() {
             Kami juga menerima desain custom sesuai kebutuhan klien dengan 
             menghasilkan produk yang berkualitas dan harga yang terjangkau
             serta kompetitif. Produk kami mampu bersaing dengan perusahaan tekstil
-            lainnya
+            lainnya.
           </p>
           <p className="text-lg leading-relaxed">
             <strong>Visi dan Misi:</strong>
@@ -141,11 +141,11 @@ export default function About() {
           <ul className="list-disc list-inside ml-5 text-lg">
             <li>
               <strong>Visi:</strong> Menjadi mitra utama dalam industri pakaian
-              dalam dengan produk berkualitas tinggi dan harga yang kompetitif.
+              dalam dengan produk yang berkualitas tinggi dan harga yang kompetitif.
             </li>
             <li>
-              <strong>Misi:</strong> Menghasilkan produk berkualitas tinggi dengan
-              teknologi modern dan inovasi yang inovatif untuk memenuhi kebutuhan
+              <strong>Misi:</strong> Menghasilkan produk yang berkualitas tinggi dengan
+              teknologi modern, inovasi dan inovatif untuk memenuhi kebutuhan
               industri pakaian dalam.
             </li>
           </ul>
@@ -160,13 +160,13 @@ export default function About() {
             </li>
             <li>
               <strong>Teknologi Modern:</strong> Didukung oleh mesin-mesin
-              berteknologi tinggi untuk menghasilkan produk dengan presisi
+              berteknologi modern untuk menghasilkan produk dengan presisi
               tinggi.
             </li>
             <li>
               <strong>Pelayanan Pelanggan:</strong> Kepuasan pelanggan adalah
               prioritas kami. Kami berkomitmen memberikan layanan terbaik, mulai
-              dari produksi hingga pengiriman.
+              dari pemesanan, produksi hingga pengiriman.
             </li>
           </ul>
           <p className="text-lg leading-relaxed">

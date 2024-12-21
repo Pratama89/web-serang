@@ -31,7 +31,7 @@ export default function ProductHero() {
       break;
     case "/galeri":
       pageTitle = "GALERI";
-      backgroundImage = "/img/rajut4.JPG";
+      backgroundImage = "/img/rajut3.JPG";
       break;
     case "/products/tali":
       pageTitle = "TALI BRA";
